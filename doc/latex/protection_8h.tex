@@ -1,0 +1,212 @@
+\hypertarget{protection_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/protection.h File Reference}
+\label{protection_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/protection.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/protection.\+h}}
+{\ttfamily \#include \char`\"{}position.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsprotection}{sprotection}
+\begin{DoxyCompactList}\small\item\em Represente une protection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsprotection}{sprotection} {\bfseries protection}\hypertarget{protection_8h_ac7036fa9b99302eb6bbae7e4648859e5}{}\label{protection_8h_ac7036fa9b99302eb6bbae7e4648859e5}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{protection_8h_a10225161802c282d32bfc98bd0d9e42e}{init\+Protection} (\hyperlink{structsprotection}{protection} $\ast$p)
+\begin{DoxyCompactList}\small\item\em init\+Protection initialise identifiant, la vie et position de la protection \end{DoxyCompactList}\item 
+void \hyperlink{protection_8h_abfb638dfecab577fe983bb2138b5214b}{set\+Id\+Protection} (\hyperlink{structsprotection}{protection} $\ast$p, int i)
+\begin{DoxyCompactList}\small\item\em set\+Id\+Protection modifie l\textquotesingle{}identifiant de la protection \end{DoxyCompactList}\item 
+int \hyperlink{protection_8h_a9189e942f52f1e4e8facad070788e2d2}{get\+Id\+Protection} (\hyperlink{structsprotection}{protection} p)
+\begin{DoxyCompactList}\small\item\em get\+Id\+Protection renvoie l\textquotesingle{}identifiant de la protection \end{DoxyCompactList}\item 
+\hyperlink{structsposition}{position} \hyperlink{protection_8h_aa559b1cdf6939a9b827d64ac84864c0b}{get\+Pos\+Protection} (\hyperlink{structsprotection}{protection} p)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Protection renvoie la position de la protection \end{DoxyCompactList}\item 
+void \hyperlink{protection_8h_a967ed05aec4cbc89a225505e92eef7b8}{set\+Pos\+Protection} (\hyperlink{structsprotection}{protection} $\ast$p, int X, int Y)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+Protection modifie les coordonnées de la protection \end{DoxyCompactList}\item 
+int \hyperlink{protection_8h_a6b92fadff969279dad4e2e676e89b9e1}{get\+Vie\+Protection} (\hyperlink{structsprotection}{protection} p)
+\begin{DoxyCompactList}\small\item\em get\+Vie\+Protection renvoie le nombre de vie de la protection \end{DoxyCompactList}\item 
+void \hyperlink{protection_8h_a85f3adbc83d92ca148d7a0060759b2db}{set\+Vie\+Protection} (\hyperlink{structsprotection}{protection} $\ast$p, int V)
+\begin{DoxyCompactList}\small\item\em set\+Vie\+Protection modifie le nombre de vie de la protection \end{DoxyCompactList}\item 
+\hyperlink{structsprotection}{protection} \hyperlink{protection_8h_a64ae8fd4b8760cd986c5050c57dd84f6}{creation\+Protection} (int id, int vie, int x, int y)
+\begin{DoxyCompactList}\small\item\em creation\+Protection renvoie un alien avec ses carateristiques \end{DoxyCompactList}\item 
+void \hyperlink{protection_8h_ac0c8b137980ef32cb8b85a570253c8cb}{test\+Protection} ()\hypertarget{protection_8h_ac0c8b137980ef32cb8b85a570253c8cb}{}\label{protection_8h_ac0c8b137980ef32cb8b85a570253c8cb}
+
+\begin{DoxyCompactList}\small\item\em test\+Protection teste les différentes fonctions et procedures sur les protections \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09 mars 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{protection.\+h@{protection.\+h}!creation\+Protection@{creation\+Protection}}
+\index{creation\+Protection@{creation\+Protection}!protection.\+h@{protection.\+h}}
+\subsubsection[{\texorpdfstring{creation\+Protection(int id, int vie, int x, int y)}{creationProtection(int id, int vie, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf protection} creation\+Protection (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{vie, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{protection_8h_a64ae8fd4b8760cd986c5050c57dd84f6}{}\label{protection_8h_a64ae8fd4b8760cd986c5050c57dd84f6}
+
+
+creation\+Protection renvoie un alien avec ses carateristiques 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & un entier positif \\
+\hline
+{\em vie} & un entier positif \\
+\hline
+{\em x} & un entier positif \\
+\hline
+{\em y} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une nouvelle protection 
+\end{DoxyReturn}
+\index{protection.\+h@{protection.\+h}!get\+Id\+Protection@{get\+Id\+Protection}}
+\index{get\+Id\+Protection@{get\+Id\+Protection}!protection.\+h@{protection.\+h}}
+\subsubsection[{\texorpdfstring{get\+Id\+Protection(protection p)}{getIdProtection(protection p)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Id\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf protection}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{protection_8h_a9189e942f52f1e4e8facad070788e2d2}{}\label{protection_8h_a9189e942f52f1e4e8facad070788e2d2}
+
+
+get\+Id\+Protection renvoie l\textquotesingle{}identifiant de la protection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & protection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, l\textquotesingle{}identifiant de la protection 
+\end{DoxyReturn}
+\index{protection.\+h@{protection.\+h}!get\+Pos\+Protection@{get\+Pos\+Protection}}
+\index{get\+Pos\+Protection@{get\+Pos\+Protection}!protection.\+h@{protection.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Protection(protection p)}{getPosProtection(protection p)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf position} get\+Pos\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf protection}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{protection_8h_aa559b1cdf6939a9b827d64ac84864c0b}{}\label{protection_8h_aa559b1cdf6939a9b827d64ac84864c0b}
+
+
+get\+Pos\+Protection renvoie la position de la protection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & protection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la position de la protection 
+\end{DoxyReturn}
+\index{protection.\+h@{protection.\+h}!get\+Vie\+Protection@{get\+Vie\+Protection}}
+\index{get\+Vie\+Protection@{get\+Vie\+Protection}!protection.\+h@{protection.\+h}}
+\subsubsection[{\texorpdfstring{get\+Vie\+Protection(protection p)}{getVieProtection(protection p)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Vie\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf protection}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{protection_8h_a6b92fadff969279dad4e2e676e89b9e1}{}\label{protection_8h_a6b92fadff969279dad4e2e676e89b9e1}
+
+
+get\+Vie\+Protection renvoie le nombre de vie de la protection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & protection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le nombre de vie de la protection un entier 
+\end{DoxyReturn}
+\index{protection.\+h@{protection.\+h}!init\+Protection@{init\+Protection}}
+\index{init\+Protection@{init\+Protection}!protection.\+h@{protection.\+h}}
+\subsubsection[{\texorpdfstring{init\+Protection(protection $\ast$p)}{initProtection(protection *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf protection} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{protection_8h_a10225161802c282d32bfc98bd0d9e42e}{}\label{protection_8h_a10225161802c282d32bfc98bd0d9e42e}
+
+
+init\+Protection initialise identifiant, la vie et position de la protection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & pointeur sur protection \\
+\hline
+\end{DoxyParams}
+\index{protection.\+h@{protection.\+h}!set\+Id\+Protection@{set\+Id\+Protection}}
+\index{set\+Id\+Protection@{set\+Id\+Protection}!protection.\+h@{protection.\+h}}
+\subsubsection[{\texorpdfstring{set\+Id\+Protection(protection $\ast$p, int i)}{setIdProtection(protection *p, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Id\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf protection} $\ast$}]{p, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{protection_8h_abfb638dfecab577fe983bb2138b5214b}{}\label{protection_8h_abfb638dfecab577fe983bb2138b5214b}
+
+
+set\+Id\+Protection modifie l\textquotesingle{}identifiant de la protection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & pointeur sur protection \\
+\hline
+{\em i} & entier positif \\
+\hline
+\end{DoxyParams}
+\index{protection.\+h@{protection.\+h}!set\+Pos\+Protection@{set\+Pos\+Protection}}
+\index{set\+Pos\+Protection@{set\+Pos\+Protection}!protection.\+h@{protection.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+Protection(protection $\ast$p, int X, int Y)}{setPosProtection(protection *p, int X, int Y)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf protection} $\ast$}]{p, }
+\item[{int}]{X, }
+\item[{int}]{Y}
+\end{DoxyParamCaption}
+)}\hypertarget{protection_8h_a967ed05aec4cbc89a225505e92eef7b8}{}\label{protection_8h_a967ed05aec4cbc89a225505e92eef7b8}
+
+
+set\+Pos\+Protection modifie les coordonnées de la protection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & pointeur sur protection \\
+\hline
+{\em x} & entier positif pour modifier l\textquotesingle{}abscisse \\
+\hline
+{\em y} & entier positif pour modifier l\textquotesingle{}ordonnée \\
+\hline
+\end{DoxyParams}
+\index{protection.\+h@{protection.\+h}!set\+Vie\+Protection@{set\+Vie\+Protection}}
+\index{set\+Vie\+Protection@{set\+Vie\+Protection}!protection.\+h@{protection.\+h}}
+\subsubsection[{\texorpdfstring{set\+Vie\+Protection(protection $\ast$p, int V)}{setVieProtection(protection *p, int V)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Vie\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf protection} $\ast$}]{p, }
+\item[{int}]{V}
+\end{DoxyParamCaption}
+)}\hypertarget{protection_8h_a85f3adbc83d92ca148d7a0060759b2db}{}\label{protection_8h_a85f3adbc83d92ca148d7a0060759b2db}
+
+
+set\+Vie\+Protection modifie le nombre de vie de la protection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & pointeur sur protection \\
+\hline
+{\em V} & entier positif pour modifier \\
+\hline
+\end{DoxyParams}

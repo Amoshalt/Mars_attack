@@ -1,0 +1,204 @@
+\hypertarget{ensembleprotection_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/ensembleprotection.h File Reference}
+\label{ensembleprotection_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/ensembleprotection.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/ensembleprotection.\+h}}
+{\ttfamily \#include \char`\"{}protection.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}position.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsensembleprotection}{sensembleprotection}
+\begin{DoxyCompactList}\small\item\em Represente un ensemble de protection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsensembleprotection}{sensembleprotection} {\bfseries ensembleprotection}\hypertarget{ensembleprotection_8h_a294e7fd9533e7f50f8815cf2be8cc754}{}\label{ensembleprotection_8h_a294e7fd9533e7f50f8815cf2be8cc754}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ensembleprotection_8h_ac516442005eee18be4222005552217f3}{init\+Ensemble\+Protection} (\hyperlink{structsensembleprotection}{ensembleprotection} $\ast$EP)
+\begin{DoxyCompactList}\small\item\em init\+Ensemble\+Protection initialise la taille, la capacité puis alloue le tableau de protection dans le tas \end{DoxyCompactList}\item 
+void \hyperlink{ensembleprotection_8h_a73ac5266c30146b4f527c9f001c9b47b}{free\+Ensemble\+Protection} (\hyperlink{structsensembleprotection}{ensembleprotection} $\ast$EP)
+\begin{DoxyCompactList}\small\item\em free\+Ensemble\+Protection libere la mémoire du tableau de protection et met à zéro la capacité et la taille \end{DoxyCompactList}\item 
+void \hyperlink{ensembleprotection_8h_a40c29b389b9811cd734793923ee31479}{ajout\+Protection} (\hyperlink{structsensembleprotection}{ensembleprotection} $\ast$EP, \hyperlink{structsprotection}{protection} p)
+\begin{DoxyCompactList}\small\item\em ajout\+Protection ajoute une protection à l\textquotesingle{}ensemble de protection \end{DoxyCompactList}\item 
+void \hyperlink{ensembleprotection_8h_aaa0fcba033c290b18cdc3805657a0e16}{supp\+Protection} (\hyperlink{structsensembleprotection}{ensembleprotection} $\ast$EP, int ID)
+\begin{DoxyCompactList}\small\item\em supp\+Protection supprime la protection, dont l\textquotesingle{}identifiant est ID, à l\textquotesingle{}ensemble de protection \end{DoxyCompactList}\item 
+void \hyperlink{ensembleprotection_8h_a3d5245565548c2b8ae0f4240bc299ee2}{supp\+Ensemble\+Protection} (\hyperlink{structsensembleprotection}{ensembleprotection} $\ast$EP)
+\begin{DoxyCompactList}\small\item\em supp\+Ensemble\+Protection supprime l\textquotesingle{}ensemble de protection \end{DoxyCompactList}\item 
+int \hyperlink{ensembleprotection_8h_a26216dacc8304f7dcfe1454794ce8722}{get\+Id\+Protection\+Position} (\hyperlink{structsensembleprotection}{ensembleprotection} EP, \hyperlink{structsposition}{position} P)
+\begin{DoxyCompactList}\small\item\em get\+Id\+Protection\+Position renvoie l\textquotesingle{}identifiant de la protection, dont la position est P \end{DoxyCompactList}\item 
+int \hyperlink{ensembleprotection_8h_a99577f759bd46d843f5de4f13b7be1dc}{supp\+Vie\+Protection\+ID} (\hyperlink{structsensembleprotection}{ensembleprotection} $\ast$EP, int ID)
+\begin{DoxyCompactList}\small\item\em supp\+Vie\+Protection\+ID supprime une vie à la protection, dont l\textquotesingle{}identifiant est ID, et retourne 1 si la protection est supprimée sinon 0 \end{DoxyCompactList}\item 
+int \hyperlink{ensembleprotection_8h_ad30e591bb9c87102272d7cc1e54b64fa}{supp\+Vie\+Protection\+Position} (\hyperlink{structsensembleprotection}{ensembleprotection} $\ast$EP, \hyperlink{structsposition}{position} P)
+\begin{DoxyCompactList}\small\item\em supp\+Vie\+Protection\+Position supprime une vie à la protection, dont la position est P, et retourne 1 si la protection est supprimée sinon 0 \end{DoxyCompactList}\item 
+void \hyperlink{ensembleprotection_8h_a1e2c2caef3686e8be329b18c8a16d425}{test\+Ensemble\+Protection} ()\hypertarget{ensembleprotection_8h_a1e2c2caef3686e8be329b18c8a16d425}{}\label{ensembleprotection_8h_a1e2c2caef3686e8be329b18c8a16d425}
+
+\begin{DoxyCompactList}\small\item\em test\+Ensemble\+Protecion teste toutes les fonctions et procédures sur les ensembles de protection \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09 mars 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{ensembleprotection.\+h@{ensembleprotection.\+h}!ajout\+Protection@{ajout\+Protection}}
+\index{ajout\+Protection@{ajout\+Protection}!ensembleprotection.\+h@{ensembleprotection.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+Protection(ensembleprotection $\ast$\+E\+P, protection p)}{ajoutProtection(ensembleprotection *EP, protection p)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf ensembleprotection} $\ast$}]{EP, }
+\item[{{\bf protection}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{ensembleprotection_8h_a40c29b389b9811cd734793923ee31479}{}\label{ensembleprotection_8h_a40c29b389b9811cd734793923ee31479}
+
+
+ajout\+Protection ajoute une protection à l\textquotesingle{}ensemble de protection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EP} & pointeur sur la premiere case de ensembleprotection \\
+\hline
+{\em p} & protection à ajouter \\
+\hline
+\end{DoxyParams}
+\index{ensembleprotection.\+h@{ensembleprotection.\+h}!free\+Ensemble\+Protection@{free\+Ensemble\+Protection}}
+\index{free\+Ensemble\+Protection@{free\+Ensemble\+Protection}!ensembleprotection.\+h@{ensembleprotection.\+h}}
+\subsubsection[{\texorpdfstring{free\+Ensemble\+Protection(ensembleprotection $\ast$\+E\+P)}{freeEnsembleProtection(ensembleprotection *EP)}}]{\setlength{\rightskip}{0pt plus 5cm}void free\+Ensemble\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf ensembleprotection} $\ast$}]{EP}
+\end{DoxyParamCaption}
+)}\hypertarget{ensembleprotection_8h_a73ac5266c30146b4f527c9f001c9b47b}{}\label{ensembleprotection_8h_a73ac5266c30146b4f527c9f001c9b47b}
+
+
+free\+Ensemble\+Protection libere la mémoire du tableau de protection et met à zéro la capacité et la taille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EP} & pointeur sur la premiere case de ensembleprotection \\
+\hline
+\end{DoxyParams}
+\index{ensembleprotection.\+h@{ensembleprotection.\+h}!get\+Id\+Protection\+Position@{get\+Id\+Protection\+Position}}
+\index{get\+Id\+Protection\+Position@{get\+Id\+Protection\+Position}!ensembleprotection.\+h@{ensembleprotection.\+h}}
+\subsubsection[{\texorpdfstring{get\+Id\+Protection\+Position(ensembleprotection E\+P, position P)}{getIdProtectionPosition(ensembleprotection EP, position P)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Id\+Protection\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ensembleprotection}}]{EP, }
+\item[{{\bf position}}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{ensembleprotection_8h_a26216dacc8304f7dcfe1454794ce8722}{}\label{ensembleprotection_8h_a26216dacc8304f7dcfe1454794ce8722}
+
+
+get\+Id\+Protection\+Position renvoie l\textquotesingle{}identifiant de la protection, dont la position est P 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EP} & un ensembleprotection \\
+\hline
+{\em P} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}identifiant de la protection un entier 
+\end{DoxyReturn}
+\index{ensembleprotection.\+h@{ensembleprotection.\+h}!init\+Ensemble\+Protection@{init\+Ensemble\+Protection}}
+\index{init\+Ensemble\+Protection@{init\+Ensemble\+Protection}!ensembleprotection.\+h@{ensembleprotection.\+h}}
+\subsubsection[{\texorpdfstring{init\+Ensemble\+Protection(ensembleprotection $\ast$\+E\+P)}{initEnsembleProtection(ensembleprotection *EP)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Ensemble\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf ensembleprotection} $\ast$}]{EP}
+\end{DoxyParamCaption}
+)}\hypertarget{ensembleprotection_8h_ac516442005eee18be4222005552217f3}{}\label{ensembleprotection_8h_ac516442005eee18be4222005552217f3}
+
+
+init\+Ensemble\+Protection initialise la taille, la capacité puis alloue le tableau de protection dans le tas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EP} & pointeur sur la premiere case de ensembleprotection \\
+\hline
+\end{DoxyParams}
+\index{ensembleprotection.\+h@{ensembleprotection.\+h}!supp\+Ensemble\+Protection@{supp\+Ensemble\+Protection}}
+\index{supp\+Ensemble\+Protection@{supp\+Ensemble\+Protection}!ensembleprotection.\+h@{ensembleprotection.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Ensemble\+Protection(ensembleprotection $\ast$\+E\+P)}{suppEnsembleProtection(ensembleprotection *EP)}}]{\setlength{\rightskip}{0pt plus 5cm}void supp\+Ensemble\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf ensembleprotection} $\ast$}]{EP}
+\end{DoxyParamCaption}
+)}\hypertarget{ensembleprotection_8h_a3d5245565548c2b8ae0f4240bc299ee2}{}\label{ensembleprotection_8h_a3d5245565548c2b8ae0f4240bc299ee2}
+
+
+supp\+Ensemble\+Protection supprime l\textquotesingle{}ensemble de protection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EP} & un ensembleprotection \\
+\hline
+\end{DoxyParams}
+\index{ensembleprotection.\+h@{ensembleprotection.\+h}!supp\+Protection@{supp\+Protection}}
+\index{supp\+Protection@{supp\+Protection}!ensembleprotection.\+h@{ensembleprotection.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Protection(ensembleprotection $\ast$\+E\+P, int I\+D)}{suppProtection(ensembleprotection *EP, int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}void supp\+Protection (
+\begin{DoxyParamCaption}
+\item[{{\bf ensembleprotection} $\ast$}]{EP, }
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{ensembleprotection_8h_aaa0fcba033c290b18cdc3805657a0e16}{}\label{ensembleprotection_8h_aaa0fcba033c290b18cdc3805657a0e16}
+
+
+supp\+Protection supprime la protection, dont l\textquotesingle{}identifiant est ID, à l\textquotesingle{}ensemble de protection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EP} & pointeur sur la premiere case de ensembleprotection \\
+\hline
+{\em ID} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{ensembleprotection.\+h@{ensembleprotection.\+h}!supp\+Vie\+Protection\+ID@{supp\+Vie\+Protection\+ID}}
+\index{supp\+Vie\+Protection\+ID@{supp\+Vie\+Protection\+ID}!ensembleprotection.\+h@{ensembleprotection.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Vie\+Protection\+I\+D(ensembleprotection $\ast$\+E\+P, int I\+D)}{suppVieProtectionID(ensembleprotection *EP, int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}int supp\+Vie\+Protection\+ID (
+\begin{DoxyParamCaption}
+\item[{{\bf ensembleprotection} $\ast$}]{EP, }
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{ensembleprotection_8h_a99577f759bd46d843f5de4f13b7be1dc}{}\label{ensembleprotection_8h_a99577f759bd46d843f5de4f13b7be1dc}
+
+
+supp\+Vie\+Protection\+ID supprime une vie à la protection, dont l\textquotesingle{}identifiant est ID, et retourne 1 si la protection est supprimée sinon 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EP} & pointeur sur la premiere case de ensembleprotection \\
+\hline
+{\em ID} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier \+: 1 si la protection est supprimée et 0 sinon 
+\end{DoxyReturn}
+\index{ensembleprotection.\+h@{ensembleprotection.\+h}!supp\+Vie\+Protection\+Position@{supp\+Vie\+Protection\+Position}}
+\index{supp\+Vie\+Protection\+Position@{supp\+Vie\+Protection\+Position}!ensembleprotection.\+h@{ensembleprotection.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Vie\+Protection\+Position(ensembleprotection $\ast$\+E\+P, position P)}{suppVieProtectionPosition(ensembleprotection *EP, position P)}}]{\setlength{\rightskip}{0pt plus 5cm}int supp\+Vie\+Protection\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ensembleprotection} $\ast$}]{EP, }
+\item[{{\bf position}}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{ensembleprotection_8h_ad30e591bb9c87102272d7cc1e54b64fa}{}\label{ensembleprotection_8h_ad30e591bb9c87102272d7cc1e54b64fa}
+
+
+supp\+Vie\+Protection\+Position supprime une vie à la protection, dont la position est P, et retourne 1 si la protection est supprimée sinon 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EP} & pointeur sur la premiere case de ensembleprotection \\
+\hline
+{\em P} & une position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier \+: 1 si la protection est supprimée et 0 sinon 
+\end{DoxyReturn}

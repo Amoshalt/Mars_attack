@@ -1,0 +1,480 @@
+\hypertarget{ensemblealien_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/ensemblealien.h File Reference}
+\label{ensemblealien_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/ensemblealien.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/ensemblealien.\+h}}
+{\ttfamily \#include \char`\"{}position.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}alien.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsensemblealien}{sensemblealien}
+\begin{DoxyCompactList}\small\item\em Represente un ensemble d\textquotesingle{}alien. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsensemblealien}{sensemblealien} {\bfseries ensemblealien}\hypertarget{ensemblealien_8h_aaa2ea3d06ab8af0c95d349ac749cc4a1}{}\label{ensemblealien_8h_aaa2ea3d06ab8af0c95d349ac749cc4a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ensemblealien_8h_a04e8ae29a44f1c5999f02f37a9d6feea}{init\+Ensemble\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA)
+\begin{DoxyCompactList}\small\item\em init\+Ensemble\+Alien initialise la taille, la capacité puis alloue le tableau de alien dans le tas \end{DoxyCompactList}\item 
+void \hyperlink{ensemblealien_8h_a4733238ead79929caa6be9fa4a8fd898}{free\+Ensemble\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA)
+\begin{DoxyCompactList}\small\item\em free\+Ensemble\+Alien libere la mémoire du tableau d\textquotesingle{}alien et met à zéro la capacité et la taille \end{DoxyCompactList}\item 
+void \hyperlink{ensemblealien_8h_a7bea2514d7ebf3d6a0e740b66d30e6f4}{ajout\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA, \hyperlink{structsalien}{alien} a)
+\begin{DoxyCompactList}\small\item\em ajout\+Alien ajoute un alien à l\textquotesingle{}ensemble d\textquotesingle{}alien \end{DoxyCompactList}\item 
+int \hyperlink{ensemblealien_8h_a427d410126fbb85bafff7a9939184624}{get\+Nombre\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} EA)
+\begin{DoxyCompactList}\small\item\em get\+Nombre\+Alien compte le nombre d\textquotesingle{}alien dans ensemblealien \end{DoxyCompactList}\item 
+void \hyperlink{ensemblealien_8h_a16718c474db7c3a247f13f9613f878ec}{supp\+Alien\+Id} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA, int ID)
+\begin{DoxyCompactList}\small\item\em supp\+Alien\+Id supprime l\textquotesingle{}alien, dont l\textquotesingle{}identifiant est ID, dans l\textquotesingle{}ensemble d\textquotesingle{}alien \end{DoxyCompactList}\item 
+void \hyperlink{ensemblealien_8h_ae173849ac573357e3cfebc72683710d9}{supp\+Ensemble\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA)
+\begin{DoxyCompactList}\small\item\em supp\+Ensemble\+Alien, supprime l\textquotesingle{}ensemble des aliens \end{DoxyCompactList}\item 
+void \hyperlink{ensemblealien_8h_a3755e554a64f7591ddd8237ee203a6ce}{set\+Pos\+X\+Ieme\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA, int i, int x)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+X\+Ieme\+Alien modifie la l\textquotesingle{}abscisse du Ieme alien dans ensemblealien \end{DoxyCompactList}\item 
+void \hyperlink{ensemblealien_8h_aec839c464d10f139485a5195033bd003}{set\+Pos\+Y\+Ieme\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA, int i, int y)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+X\+Ieme\+Alien modifie la l\textquotesingle{}ordonnée du Ieme alien dans ensemblealien \end{DoxyCompactList}\item 
+\hyperlink{structsposition}{position} \hyperlink{ensemblealien_8h_a25b5b07949c51aaad15cbc4617c2b479}{get\+Pos\+Ieme\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} EA, int i)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Ieme\+Alien récupere la position du Ieme alien dans ensemblealien \end{DoxyCompactList}\item 
+int \hyperlink{ensemblealien_8h_ad5ea1f13fe7b2267cda700cbd5ddb16f}{get\+Pos\+X\+Ieme\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} EA, int i)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+X\+Ieme\+Alien renvoie la position X du ieme alien de l\textquotesingle{}ensemble d\textquotesingle{}alien \end{DoxyCompactList}\item 
+int \hyperlink{ensemblealien_8h_a90deea3a03bb2466859fd48d80c10fa4}{get\+Pos\+Y\+Ieme\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} EA, int i)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Y\+Ieme\+Alien renvoie la position Y du ieme alien de l\textquotesingle{}ensemble d\textquotesingle{}alien \end{DoxyCompactList}\item 
+int \hyperlink{ensemblealien_8h_a85e2dec42c8eef143f519635ec31c45c}{get\+Vie\+Alien\+Position} (\hyperlink{structsensemblealien}{ensemblealien} EA, int x, int y)
+\begin{DoxyCompactList}\small\item\em get\+Vie\+Alien\+Position renvoie la vie de alien dont la position est x et y de l\textquotesingle{}ensemble d\textquotesingle{}alien \end{DoxyCompactList}\item 
+int \hyperlink{ensemblealien_8h_a8295712d76d8628121d65c14f2459366}{get\+Id\+Alien\+Position} (\hyperlink{structsensemblealien}{ensemblealien} EA, \hyperlink{structsposition}{position} P)
+\begin{DoxyCompactList}\small\item\em get\+Id\+Alien\+Position renvoie d\textquotesingle{}identifiant d\textquotesingle{}un alien, dont la position est P, dans l\textquotesingle{}ensemble alien \end{DoxyCompactList}\item 
+int \hyperlink{ensemblealien_8h_a39ac6b6e811243631cc05ad2c82a541c}{get\+Vie\+Ieme\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} EA, int i)
+\begin{DoxyCompactList}\small\item\em get\+Vie\+Ieme\+Alien renvoie la vie du ieme alien de l\textquotesingle{}ensemble d\textquotesingle{}alien \end{DoxyCompactList}\item 
+int \hyperlink{ensemblealien_8h_a536691bc9f5cff65fcbbf51ef8a02306}{supp\+Vie\+Alien\+ID} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA, int id)
+\begin{DoxyCompactList}\small\item\em supp\+Vie\+Alien\+ID supprime une vie à l\textquotesingle{}alien, dont l\textquotesingle{}identifiant est id, et retourne 1 si l\textquotesingle{}alien est supprimé sinon 0 \end{DoxyCompactList}\item 
+int \hyperlink{ensemblealien_8h_a0c007d5a2071723beab76b1e76359563}{supp\+Vie\+Alien\+Position} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA, \hyperlink{structsposition}{position} P)
+\begin{DoxyCompactList}\small\item\em supp\+Vie\+Alien\+Position supprime une vie à l\textquotesingle{}alien, dont la position est P, et retourne 1 si l\textquotesingle{}alien est supprimé sinon 0 \end{DoxyCompactList}\item 
+int \hyperlink{ensemblealien_8h_a09acd4c7bec3aef9a90207dd70a5f60f}{get\+Direction\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} EA)
+\begin{DoxyCompactList}\small\item\em get\+Direction\+Alien la direction de l\textquotesingle{}ensemble d\textquotesingle{}alien \end{DoxyCompactList}\item 
+int \hyperlink{ensemblealien_8h_adb586abcb1ee54c28784a6d3a2586633}{get\+Descendu\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} EA)
+\begin{DoxyCompactList}\small\item\em get\+Descendu\+Alien renvoie la valeur de descendu del\textquotesingle{}ensemble d\textquotesingle{}alien \end{DoxyCompactList}\item 
+void \hyperlink{ensemblealien_8h_a83dffc12274c728b178bb9a589e5f025}{set\+Direction\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA, int i)
+\begin{DoxyCompactList}\small\item\em set\+Direction\+Alien modifie la direction de l\textquotesingle{}ensemble d\textquotesingle{}alien \end{DoxyCompactList}\item 
+void \hyperlink{ensemblealien_8h_a1b98bb66476b956ff6c6ea93acf4970e}{set\+Descendu\+Alien} (\hyperlink{structsensemblealien}{ensemblealien} $\ast$EA, int i)
+\begin{DoxyCompactList}\small\item\em set\+Descendu\+Alien modifie le descendu de l\textquotesingle{}ensemble d\textquotesingle{}alien \end{DoxyCompactList}\item 
+void \hyperlink{ensemblealien_8h_a65eb8086db0353dead681337111c2a3d}{test\+Ensemble\+Alien} ()\hypertarget{ensemblealien_8h_a65eb8086db0353dead681337111c2a3d}{}\label{ensemblealien_8h_a65eb8086db0353dead681337111c2a3d}
+
+\begin{DoxyCompactList}\small\item\em test\+Ensemble\+Alien teste toutes les fonctions et procédures sur les ensembles d\textquotesingle{}aliens \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09 mars 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!ajout\+Alien@{ajout\+Alien}}
+\index{ajout\+Alien@{ajout\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+Alien(ensemblealien $\ast$\+E\+A, alien a)}{ajoutAlien(ensemblealien *EA, alien a)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA, }
+\item[{{\bf alien}}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a7bea2514d7ebf3d6a0e740b66d30e6f4}{}\label{ensemblealien_8h_a7bea2514d7ebf3d6a0e740b66d30e6f4}
+
+
+ajout\+Alien ajoute un alien à l\textquotesingle{}ensemble d\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & pointeur sur la premiere case de ensemblealien \\
+\hline
+{\em a} & alien à ajouter \\
+\hline
+\end{DoxyParams}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!free\+Ensemble\+Alien@{free\+Ensemble\+Alien}}
+\index{free\+Ensemble\+Alien@{free\+Ensemble\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{free\+Ensemble\+Alien(ensemblealien $\ast$\+E\+A)}{freeEnsembleAlien(ensemblealien *EA)}}]{\setlength{\rightskip}{0pt plus 5cm}void free\+Ensemble\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a4733238ead79929caa6be9fa4a8fd898}{}\label{ensemblealien_8h_a4733238ead79929caa6be9fa4a8fd898}
+
+
+free\+Ensemble\+Alien libere la mémoire du tableau d\textquotesingle{}alien et met à zéro la capacité et la taille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & pointeur sur la premiere case de ensemblealien \\
+\hline
+\end{DoxyParams}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!get\+Descendu\+Alien@{get\+Descendu\+Alien}}
+\index{get\+Descendu\+Alien@{get\+Descendu\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Descendu\+Alien(ensemblealien E\+A)}{getDescenduAlien(ensemblealien EA)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Descendu\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien}}]{EA}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_adb586abcb1ee54c28784a6d3a2586633}{}\label{ensemblealien_8h_adb586abcb1ee54c28784a6d3a2586633}
+
+
+get\+Descendu\+Alien renvoie la valeur de descendu del\textquotesingle{}ensemble d\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & un ensemblealien \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, descendu 
+\end{DoxyReturn}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!get\+Direction\+Alien@{get\+Direction\+Alien}}
+\index{get\+Direction\+Alien@{get\+Direction\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Direction\+Alien(ensemblealien E\+A)}{getDirectionAlien(ensemblealien EA)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Direction\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien}}]{EA}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a09acd4c7bec3aef9a90207dd70a5f60f}{}\label{ensemblealien_8h_a09acd4c7bec3aef9a90207dd70a5f60f}
+
+
+get\+Direction\+Alien la direction de l\textquotesingle{}ensemble d\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & un ensemblealien \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, la direction de l\textquotesingle{}ensemble d\textquotesingle{}alien 
+\end{DoxyReturn}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!get\+Id\+Alien\+Position@{get\+Id\+Alien\+Position}}
+\index{get\+Id\+Alien\+Position@{get\+Id\+Alien\+Position}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Id\+Alien\+Position(ensemblealien E\+A, position P)}{getIdAlienPosition(ensemblealien EA, position P)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Id\+Alien\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien}}]{EA, }
+\item[{{\bf position}}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a8295712d76d8628121d65c14f2459366}{}\label{ensemblealien_8h_a8295712d76d8628121d65c14f2459366}
+
+
+get\+Id\+Alien\+Position renvoie d\textquotesingle{}identifiant d\textquotesingle{}un alien, dont la position est P, dans l\textquotesingle{}ensemble alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & un ensemblealien \\
+\hline
+{\em P} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}identifiant de l\textquotesingle{}alien un entier 
+\end{DoxyReturn}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!get\+Nombre\+Alien@{get\+Nombre\+Alien}}
+\index{get\+Nombre\+Alien@{get\+Nombre\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Nombre\+Alien(ensemblealien E\+A)}{getNombreAlien(ensemblealien EA)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Nombre\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien}}]{EA}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a427d410126fbb85bafff7a9939184624}{}\label{ensemblealien_8h_a427d410126fbb85bafff7a9939184624}
+
+
+get\+Nombre\+Alien compte le nombre d\textquotesingle{}alien dans ensemblealien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & un ensemblealien \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nombre d\textquotesingle{}alien, un entier 
+\end{DoxyReturn}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!get\+Pos\+Ieme\+Alien@{get\+Pos\+Ieme\+Alien}}
+\index{get\+Pos\+Ieme\+Alien@{get\+Pos\+Ieme\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Ieme\+Alien(ensemblealien E\+A, int i)}{getPosIemeAlien(ensemblealien EA, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf position} get\+Pos\+Ieme\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien}}]{EA, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a25b5b07949c51aaad15cbc4617c2b479}{}\label{ensemblealien_8h_a25b5b07949c51aaad15cbc4617c2b479}
+
+
+get\+Pos\+Ieme\+Alien récupere la position du Ieme alien dans ensemblealien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & un ensemblealien \\
+\hline
+{\em i} & entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la position de l\textquotesingle{}alien 
+\end{DoxyReturn}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!get\+Pos\+X\+Ieme\+Alien@{get\+Pos\+X\+Ieme\+Alien}}
+\index{get\+Pos\+X\+Ieme\+Alien@{get\+Pos\+X\+Ieme\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+X\+Ieme\+Alien(ensemblealien E\+A, int i)}{getPosXIemeAlien(ensemblealien EA, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Pos\+X\+Ieme\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien}}]{EA, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_ad5ea1f13fe7b2267cda700cbd5ddb16f}{}\label{ensemblealien_8h_ad5ea1f13fe7b2267cda700cbd5ddb16f}
+
+
+get\+Pos\+X\+Ieme\+Alien renvoie la position X du ieme alien de l\textquotesingle{}ensemble d\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & un ensemblealien \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, la position x de l\textquotesingle{}alien i 
+\end{DoxyReturn}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!get\+Pos\+Y\+Ieme\+Alien@{get\+Pos\+Y\+Ieme\+Alien}}
+\index{get\+Pos\+Y\+Ieme\+Alien@{get\+Pos\+Y\+Ieme\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Y\+Ieme\+Alien(ensemblealien E\+A, int i)}{getPosYIemeAlien(ensemblealien EA, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Pos\+Y\+Ieme\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien}}]{EA, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a90deea3a03bb2466859fd48d80c10fa4}{}\label{ensemblealien_8h_a90deea3a03bb2466859fd48d80c10fa4}
+
+
+get\+Pos\+Y\+Ieme\+Alien renvoie la position Y du ieme alien de l\textquotesingle{}ensemble d\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & un ensemblealien \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, la position Y de l\textquotesingle{}alien i 
+\end{DoxyReturn}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!get\+Vie\+Alien\+Position@{get\+Vie\+Alien\+Position}}
+\index{get\+Vie\+Alien\+Position@{get\+Vie\+Alien\+Position}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Vie\+Alien\+Position(ensemblealien E\+A, int x, int y)}{getVieAlienPosition(ensemblealien EA, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Vie\+Alien\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien}}]{EA, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a85e2dec42c8eef143f519635ec31c45c}{}\label{ensemblealien_8h_a85e2dec42c8eef143f519635ec31c45c}
+
+
+get\+Vie\+Alien\+Position renvoie la vie de alien dont la position est x et y de l\textquotesingle{}ensemble d\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & un ensemblealien \\
+\hline
+{\em x} & un entier positif \\
+\hline
+{\em y} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, la vie de l\textquotesingle{}alien 
+\end{DoxyReturn}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!get\+Vie\+Ieme\+Alien@{get\+Vie\+Ieme\+Alien}}
+\index{get\+Vie\+Ieme\+Alien@{get\+Vie\+Ieme\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Vie\+Ieme\+Alien(ensemblealien E\+A, int i)}{getVieIemeAlien(ensemblealien EA, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Vie\+Ieme\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien}}]{EA, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a39ac6b6e811243631cc05ad2c82a541c}{}\label{ensemblealien_8h_a39ac6b6e811243631cc05ad2c82a541c}
+
+
+get\+Vie\+Ieme\+Alien renvoie la vie du ieme alien de l\textquotesingle{}ensemble d\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & pointeur sur la premiere case de ensemblealien \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vie un entier 
+\end{DoxyReturn}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!init\+Ensemble\+Alien@{init\+Ensemble\+Alien}}
+\index{init\+Ensemble\+Alien@{init\+Ensemble\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{init\+Ensemble\+Alien(ensemblealien $\ast$\+E\+A)}{initEnsembleAlien(ensemblealien *EA)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Ensemble\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a04e8ae29a44f1c5999f02f37a9d6feea}{}\label{ensemblealien_8h_a04e8ae29a44f1c5999f02f37a9d6feea}
+
+
+init\+Ensemble\+Alien initialise la taille, la capacité puis alloue le tableau de alien dans le tas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & pointeur sur la premiere case de ensemblealien \\
+\hline
+\end{DoxyParams}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!set\+Descendu\+Alien@{set\+Descendu\+Alien}}
+\index{set\+Descendu\+Alien@{set\+Descendu\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{set\+Descendu\+Alien(ensemblealien $\ast$\+E\+A, int i)}{setDescenduAlien(ensemblealien *EA, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Descendu\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a1b98bb66476b956ff6c6ea93acf4970e}{}\label{ensemblealien_8h_a1b98bb66476b956ff6c6ea93acf4970e}
+
+
+set\+Descendu\+Alien modifie le descendu de l\textquotesingle{}ensemble d\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & un pointeur sur la premiere case de l\textquotesingle{}ensemblealien \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!set\+Direction\+Alien@{set\+Direction\+Alien}}
+\index{set\+Direction\+Alien@{set\+Direction\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{set\+Direction\+Alien(ensemblealien $\ast$\+E\+A, int i)}{setDirectionAlien(ensemblealien *EA, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Direction\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a83dffc12274c728b178bb9a589e5f025}{}\label{ensemblealien_8h_a83dffc12274c728b178bb9a589e5f025}
+
+
+set\+Direction\+Alien modifie la direction de l\textquotesingle{}ensemble d\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & un pointeur sur la premiere case de l\textquotesingle{}ensemblealien \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!set\+Pos\+X\+Ieme\+Alien@{set\+Pos\+X\+Ieme\+Alien}}
+\index{set\+Pos\+X\+Ieme\+Alien@{set\+Pos\+X\+Ieme\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+X\+Ieme\+Alien(ensemblealien $\ast$\+E\+A, int i, int x)}{setPosXIemeAlien(ensemblealien *EA, int i, int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+X\+Ieme\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA, }
+\item[{int}]{i, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a3755e554a64f7591ddd8237ee203a6ce}{}\label{ensemblealien_8h_a3755e554a64f7591ddd8237ee203a6ce}
+
+
+set\+Pos\+X\+Ieme\+Alien modifie la l\textquotesingle{}abscisse du Ieme alien dans ensemblealien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & pointeur sur la premiere case de ensemblealien \\
+\hline
+{\em i} & entier positif \\
+\hline
+{\em x} & entier positif pour modifier \\
+\hline
+\end{DoxyParams}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!set\+Pos\+Y\+Ieme\+Alien@{set\+Pos\+Y\+Ieme\+Alien}}
+\index{set\+Pos\+Y\+Ieme\+Alien@{set\+Pos\+Y\+Ieme\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+Y\+Ieme\+Alien(ensemblealien $\ast$\+E\+A, int i, int y)}{setPosYIemeAlien(ensemblealien *EA, int i, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+Y\+Ieme\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA, }
+\item[{int}]{i, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_aec839c464d10f139485a5195033bd003}{}\label{ensemblealien_8h_aec839c464d10f139485a5195033bd003}
+
+
+set\+Pos\+X\+Ieme\+Alien modifie la l\textquotesingle{}ordonnée du Ieme alien dans ensemblealien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & pointeur sur la premiere case de ensemblealien \\
+\hline
+{\em i} & entier positif \\
+\hline
+{\em y} & entier positif pour modifier \\
+\hline
+\end{DoxyParams}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!supp\+Alien\+Id@{supp\+Alien\+Id}}
+\index{supp\+Alien\+Id@{supp\+Alien\+Id}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Alien\+Id(ensemblealien $\ast$\+E\+A, int I\+D)}{suppAlienId(ensemblealien *EA, int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}void supp\+Alien\+Id (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA, }
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a16718c474db7c3a247f13f9613f878ec}{}\label{ensemblealien_8h_a16718c474db7c3a247f13f9613f878ec}
+
+
+supp\+Alien\+Id supprime l\textquotesingle{}alien, dont l\textquotesingle{}identifiant est ID, dans l\textquotesingle{}ensemble d\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & pointeur sur la premiere case de ensemblealien \\
+\hline
+{\em ID} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!supp\+Ensemble\+Alien@{supp\+Ensemble\+Alien}}
+\index{supp\+Ensemble\+Alien@{supp\+Ensemble\+Alien}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Ensemble\+Alien(ensemblealien $\ast$\+E\+A)}{suppEnsembleAlien(ensemblealien *EA)}}]{\setlength{\rightskip}{0pt plus 5cm}void supp\+Ensemble\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_ae173849ac573357e3cfebc72683710d9}{}\label{ensemblealien_8h_ae173849ac573357e3cfebc72683710d9}
+
+
+supp\+Ensemble\+Alien, supprime l\textquotesingle{}ensemble des aliens 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & pointeur sur la premiere case de ensemblealien \\
+\hline
+\end{DoxyParams}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!supp\+Vie\+Alien\+ID@{supp\+Vie\+Alien\+ID}}
+\index{supp\+Vie\+Alien\+ID@{supp\+Vie\+Alien\+ID}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Vie\+Alien\+I\+D(ensemblealien $\ast$\+E\+A, int id)}{suppVieAlienID(ensemblealien *EA, int id)}}]{\setlength{\rightskip}{0pt plus 5cm}int supp\+Vie\+Alien\+ID (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a536691bc9f5cff65fcbbf51ef8a02306}{}\label{ensemblealien_8h_a536691bc9f5cff65fcbbf51ef8a02306}
+
+
+supp\+Vie\+Alien\+ID supprime une vie à l\textquotesingle{}alien, dont l\textquotesingle{}identifiant est id, et retourne 1 si l\textquotesingle{}alien est supprimé sinon 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & pointeur sur la premiere case de ensemblealien \\
+\hline
+{\em id} & entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier \+: 1 si l\textquotesingle{}alien est supprimé et 0 sinon 
+\end{DoxyReturn}
+\index{ensemblealien.\+h@{ensemblealien.\+h}!supp\+Vie\+Alien\+Position@{supp\+Vie\+Alien\+Position}}
+\index{supp\+Vie\+Alien\+Position@{supp\+Vie\+Alien\+Position}!ensemblealien.\+h@{ensemblealien.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Vie\+Alien\+Position(ensemblealien $\ast$\+E\+A, position P)}{suppVieAlienPosition(ensemblealien *EA, position P)}}]{\setlength{\rightskip}{0pt plus 5cm}int supp\+Vie\+Alien\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblealien} $\ast$}]{EA, }
+\item[{{\bf position}}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblealien_8h_a0c007d5a2071723beab76b1e76359563}{}\label{ensemblealien_8h_a0c007d5a2071723beab76b1e76359563}
+
+
+supp\+Vie\+Alien\+Position supprime une vie à l\textquotesingle{}alien, dont la position est P, et retourne 1 si l\textquotesingle{}alien est supprimé sinon 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EA} & pointeur sur la premiere case de ensemblealien \\
+\hline
+{\em P} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier \+: 1 si l\textquotesingle{}alien est supprimé et 0 sinon 
+\end{DoxyReturn}

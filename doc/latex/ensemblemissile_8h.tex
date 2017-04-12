@@ -1,0 +1,414 @@
+\hypertarget{ensemblemissile_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/ensemblemissile.h File Reference}
+\label{ensemblemissile_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/ensemblemissile.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/ensemblemissile.\+h}}
+{\ttfamily \#include \char`\"{}missile.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}position.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsensemblemissile}{sensemblemissile}
+\begin{DoxyCompactList}\small\item\em Represente un ensemble de missile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsensemblemissile}{sensemblemissile} {\bfseries ensemblemissile}\hypertarget{ensemblemissile_8h_a41b0552bc4575eb0263c5af142107b07}{}\label{ensemblemissile_8h_a41b0552bc4575eb0263c5af142107b07}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ensemblemissile_8h_a03f4444326da765f3d8c62943caee2ca}{init\+Ensemble\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} $\ast$EM)
+\begin{DoxyCompactList}\small\item\em init\+Ensemble\+Missile initialise la taille, la capacité puis alloue le tableau de protection dans le tas \end{DoxyCompactList}\item 
+void \hyperlink{ensemblemissile_8h_a3e3696252e804003624e8b4ae1657b9e}{free\+Ensemble\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} $\ast$EM)
+\begin{DoxyCompactList}\small\item\em free\+Ensemble\+Missile initialise la taille, la capacité puis libère la mémoire alloué pour l\textquotesingle{}ensemble de missile \end{DoxyCompactList}\item 
+void \hyperlink{ensemblemissile_8h_a67522a790958e717e6124190f7af083e}{ajout\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} $\ast$EM, \hyperlink{structsmissile}{missile} m)
+\begin{DoxyCompactList}\small\item\em ajout\+Missile ajout un missile dans l\textquotesingle{}ensemble de missile \end{DoxyCompactList}\item 
+int \hyperlink{ensemblemissile_8h_a0aaf073183a783470a8c307f2dd19a7f}{get\+Nombre\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} EM)
+\begin{DoxyCompactList}\small\item\em get\+Nombre\+Missile compte le nombre de missile dans ensemblemissile \end{DoxyCompactList}\item 
+int \hyperlink{ensemblemissile_8h_ad6b6fd454d96a0a399ebbcfcdd200a36}{get\+Pos\+X\+Ieme\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} EM, int i)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+X\+Ieme\+Missile renvoie la position X du ieme missile de l\textquotesingle{}ensemblemissile \end{DoxyCompactList}\item 
+int \hyperlink{ensemblemissile_8h_ae8fdee6a0bd09fd48e916ff86b5ed0ed}{get\+Pos\+Y\+Ieme\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} EM, int i)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Y\+Ieme\+Missile renvoie la position Y du ieme missile de l\textquotesingle{}ensemblemissile \end{DoxyCompactList}\item 
+void \hyperlink{ensemblemissile_8h_af25ed6ae9d15d1e745ab08e0e6968d7f}{set\+Pos\+X\+Ieme\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} $\ast$EM, int i, int x)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+X\+Ieme\+Missile modifie la position X du ieme missile de l\textquotesingle{}ensemblemissile \end{DoxyCompactList}\item 
+void \hyperlink{ensemblemissile_8h_acf09ecac9230e569d6187cbd543d2f8b}{set\+Pos\+Y\+Ieme\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} $\ast$EM, int i, int y)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+Y\+Ieme\+Missile modifie la position Y du ieme missile de l\textquotesingle{}ensemblemissile \end{DoxyCompactList}\item 
+\hyperlink{structsposition}{position} \hyperlink{ensemblemissile_8h_a8a1948160d426c13344a773989158477}{get\+Pos\+Ieme\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} EM, int i)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Ieme\+Missile renvoie la position du ieme missile de l\textquotesingle{}ensemblemissile \end{DoxyCompactList}\item 
+int \hyperlink{ensemblemissile_8h_af040c7172a13753e6738359a256f5808}{get\+Niveau\+Ieme\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} EM, int i)
+\begin{DoxyCompactList}\small\item\em get\+Niveau\+Ieme\+Missile renvoie le niveau du ieme missile de l\textquotesingle{}ensemblemissile \end{DoxyCompactList}\item 
+void \hyperlink{ensemblemissile_8h_aefa5c69db86cc2f3e083b59435585190}{supprimer\+Ieme\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} $\ast$EM, int i)
+\begin{DoxyCompactList}\small\item\em supprimer\+Ieme\+Missile supprime le ième missile de l\textquotesingle{}ensemble de missile \end{DoxyCompactList}\item 
+void \hyperlink{ensemblemissile_8h_ade7dc540cfc91daddbc2fcb5c8a8b198}{supprimer\+Missile\+Position} (\hyperlink{structsensemblemissile}{ensemblemissile} $\ast$EM, \hyperlink{structsposition}{position} P)
+\begin{DoxyCompactList}\small\item\em supprimer\+Missile\+Position supprime le missile de l\textquotesingle{}ensemble de missile dont la position est P \end{DoxyCompactList}\item 
+int \hyperlink{ensemblemissile_8h_a0b01cacd7d569721e3175d7ae5796b67}{get\+Niveau\+Missile\+Position} (\hyperlink{structsensemblemissile}{ensemblemissile} EM, \hyperlink{structsposition}{position} P)
+\begin{DoxyCompactList}\small\item\em get\+Niveau\+Missile\+Position renvoie le niveau du missile, dont la position est P, de l\textquotesingle{}ensemblemissile \end{DoxyCompactList}\item 
+void \hyperlink{ensemblemissile_8h_ab695a39a96752a805fc806f4d0dc5553}{supp\+Ensemble\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} $\ast$EM)
+\begin{DoxyCompactList}\small\item\em supp\+Ensemble\+Missile supprime l\textquotesingle{}ensemble des missiles \end{DoxyCompactList}\item 
+\hyperlink{structsmissile}{missile} \hyperlink{ensemblemissile_8h_ac1577bbfad8226ee091b7affa351a354}{get\+Missile\+Position} (\hyperlink{structsensemblemissile}{ensemblemissile} EM, \hyperlink{structsposition}{position} P)
+\begin{DoxyCompactList}\small\item\em get\+Missile\+Position renvoie un missile, dont la position est P \end{DoxyCompactList}\item 
+int \hyperlink{ensemblemissile_8h_ad6cc8015fba1adf399ec3029c980c8f7}{Missile\+Position} (\hyperlink{structsensemblemissile}{ensemblemissile} EM, \hyperlink{structsposition}{position} P)
+\begin{DoxyCompactList}\small\item\em Missile\+Position renvoie 1 si un missile est présent sur la position P, sinon il renvoie 0. \end{DoxyCompactList}\item 
+\hyperlink{structsmissile}{missile} \hyperlink{ensemblemissile_8h_a3d4265eec795a6d11d712a3f621d3bc3}{get\+Ieme\+Missile} (\hyperlink{structsensemblemissile}{ensemblemissile} EM, int i)
+\begin{DoxyCompactList}\small\item\em get\+Missile\+Position renvoie le ieme missile de l\textquotesingle{}ensemblemissile \end{DoxyCompactList}\item 
+void \hyperlink{ensemblemissile_8h_a5aef1d5789a959c24f2d4a7c3efe7907}{test\+Ensemble\+Missile} ()\hypertarget{ensemblemissile_8h_a5aef1d5789a959c24f2d4a7c3efe7907}{}\label{ensemblemissile_8h_a5aef1d5789a959c24f2d4a7c3efe7907}
+
+\begin{DoxyCompactList}\small\item\em test\+Ensemble\+Missile test toutes les fonctions et procedures sur ensemblemissile \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 avril 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!ajout\+Missile@{ajout\+Missile}}
+\index{ajout\+Missile@{ajout\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+Missile(ensemblemissile $\ast$\+E\+M, missile m)}{ajoutMissile(ensemblemissile *EM, missile m)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile} $\ast$}]{EM, }
+\item[{{\bf missile}}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_a67522a790958e717e6124190f7af083e}{}\label{ensemblemissile_8h_a67522a790958e717e6124190f7af083e}
+
+
+ajout\+Missile ajout un missile dans l\textquotesingle{}ensemble de missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & pointeur sur la premier case de ensemblemissile \\
+\hline
+{\em m} & missile à ajouter \\
+\hline
+\end{DoxyParams}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!free\+Ensemble\+Missile@{free\+Ensemble\+Missile}}
+\index{free\+Ensemble\+Missile@{free\+Ensemble\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{free\+Ensemble\+Missile(ensemblemissile $\ast$\+E\+M)}{freeEnsembleMissile(ensemblemissile *EM)}}]{\setlength{\rightskip}{0pt plus 5cm}void free\+Ensemble\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile} $\ast$}]{EM}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_a3e3696252e804003624e8b4ae1657b9e}{}\label{ensemblemissile_8h_a3e3696252e804003624e8b4ae1657b9e}
+
+
+free\+Ensemble\+Missile initialise la taille, la capacité puis libère la mémoire alloué pour l\textquotesingle{}ensemble de missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & pointeur sur la premier case de ensemblemissile \\
+\hline
+\end{DoxyParams}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!get\+Ieme\+Missile@{get\+Ieme\+Missile}}
+\index{get\+Ieme\+Missile@{get\+Ieme\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Ieme\+Missile(ensemblemissile E\+M, int i)}{getIemeMissile(ensemblemissile EM, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf missile} get\+Ieme\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile}}]{EM, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_a3d4265eec795a6d11d712a3f621d3bc3}{}\label{ensemblemissile_8h_a3d4265eec795a6d11d712a3f621d3bc3}
+
+
+get\+Missile\+Position renvoie le ieme missile de l\textquotesingle{}ensemblemissile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un missile 
+\end{DoxyReturn}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!get\+Missile\+Position@{get\+Missile\+Position}}
+\index{get\+Missile\+Position@{get\+Missile\+Position}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Missile\+Position(ensemblemissile E\+M, position P)}{getMissilePosition(ensemblemissile EM, position P)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf missile} get\+Missile\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile}}]{EM, }
+\item[{{\bf position}}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_ac1577bbfad8226ee091b7affa351a354}{}\label{ensemblemissile_8h_ac1577bbfad8226ee091b7affa351a354}
+
+
+get\+Missile\+Position renvoie un missile, dont la position est P 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+{\em P} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un missile 
+\end{DoxyReturn}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!get\+Niveau\+Ieme\+Missile@{get\+Niveau\+Ieme\+Missile}}
+\index{get\+Niveau\+Ieme\+Missile@{get\+Niveau\+Ieme\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Niveau\+Ieme\+Missile(ensemblemissile E\+M, int i)}{getNiveauIemeMissile(ensemblemissile EM, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Niveau\+Ieme\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile}}]{EM, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_af040c7172a13753e6738359a256f5808}{}\label{ensemblemissile_8h_af040c7172a13753e6738359a256f5808}
+
+
+get\+Niveau\+Ieme\+Missile renvoie le niveau du ieme missile de l\textquotesingle{}ensemblemissile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le niveau de missile, un entier 
+\end{DoxyReturn}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!get\+Niveau\+Missile\+Position@{get\+Niveau\+Missile\+Position}}
+\index{get\+Niveau\+Missile\+Position@{get\+Niveau\+Missile\+Position}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Niveau\+Missile\+Position(ensemblemissile E\+M, position P)}{getNiveauMissilePosition(ensemblemissile EM, position P)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Niveau\+Missile\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile}}]{EM, }
+\item[{{\bf position}}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_a0b01cacd7d569721e3175d7ae5796b67}{}\label{ensemblemissile_8h_a0b01cacd7d569721e3175d7ae5796b67}
+
+
+get\+Niveau\+Missile\+Position renvoie le niveau du missile, dont la position est P, de l\textquotesingle{}ensemblemissile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+{\em P} & une position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le niveau de missile, un entier 
+\end{DoxyReturn}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!get\+Nombre\+Missile@{get\+Nombre\+Missile}}
+\index{get\+Nombre\+Missile@{get\+Nombre\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Nombre\+Missile(ensemblemissile E\+M)}{getNombreMissile(ensemblemissile EM)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Nombre\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile}}]{EM}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_a0aaf073183a783470a8c307f2dd19a7f}{}\label{ensemblemissile_8h_a0aaf073183a783470a8c307f2dd19a7f}
+
+
+get\+Nombre\+Missile compte le nombre de missile dans ensemblemissile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nombre de missile, un entier 
+\end{DoxyReturn}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!get\+Pos\+Ieme\+Missile@{get\+Pos\+Ieme\+Missile}}
+\index{get\+Pos\+Ieme\+Missile@{get\+Pos\+Ieme\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Ieme\+Missile(ensemblemissile E\+M, int i)}{getPosIemeMissile(ensemblemissile EM, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf position} get\+Pos\+Ieme\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile}}]{EM, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_a8a1948160d426c13344a773989158477}{}\label{ensemblemissile_8h_a8a1948160d426c13344a773989158477}
+
+
+get\+Pos\+Ieme\+Missile renvoie la position du ieme missile de l\textquotesingle{}ensemblemissile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la postion de missile 
+\end{DoxyReturn}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!get\+Pos\+X\+Ieme\+Missile@{get\+Pos\+X\+Ieme\+Missile}}
+\index{get\+Pos\+X\+Ieme\+Missile@{get\+Pos\+X\+Ieme\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+X\+Ieme\+Missile(ensemblemissile E\+M, int i)}{getPosXIemeMissile(ensemblemissile EM, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Pos\+X\+Ieme\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile}}]{EM, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_ad6b6fd454d96a0a399ebbcfcdd200a36}{}\label{ensemblemissile_8h_ad6b6fd454d96a0a399ebbcfcdd200a36}
+
+
+get\+Pos\+X\+Ieme\+Missile renvoie la position X du ieme missile de l\textquotesingle{}ensemblemissile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la postion X de missile, un entier 
+\end{DoxyReturn}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!get\+Pos\+Y\+Ieme\+Missile@{get\+Pos\+Y\+Ieme\+Missile}}
+\index{get\+Pos\+Y\+Ieme\+Missile@{get\+Pos\+Y\+Ieme\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Y\+Ieme\+Missile(ensemblemissile E\+M, int i)}{getPosYIemeMissile(ensemblemissile EM, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Pos\+Y\+Ieme\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile}}]{EM, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_ae8fdee6a0bd09fd48e916ff86b5ed0ed}{}\label{ensemblemissile_8h_ae8fdee6a0bd09fd48e916ff86b5ed0ed}
+
+
+get\+Pos\+Y\+Ieme\+Missile renvoie la position Y du ieme missile de l\textquotesingle{}ensemblemissile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la postion Y de missile, un entier 
+\end{DoxyReturn}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!init\+Ensemble\+Missile@{init\+Ensemble\+Missile}}
+\index{init\+Ensemble\+Missile@{init\+Ensemble\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{init\+Ensemble\+Missile(ensemblemissile $\ast$\+E\+M)}{initEnsembleMissile(ensemblemissile *EM)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Ensemble\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile} $\ast$}]{EM}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_a03f4444326da765f3d8c62943caee2ca}{}\label{ensemblemissile_8h_a03f4444326da765f3d8c62943caee2ca}
+
+
+init\+Ensemble\+Missile initialise la taille, la capacité puis alloue le tableau de protection dans le tas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & pointeur sur la premiere case de ensemblemissile \\
+\hline
+\end{DoxyParams}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!Missile\+Position@{Missile\+Position}}
+\index{Missile\+Position@{Missile\+Position}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{Missile\+Position(ensemblemissile E\+M, position P)}{MissilePosition(ensemblemissile EM, position P)}}]{\setlength{\rightskip}{0pt plus 5cm}int Missile\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile}}]{EM, }
+\item[{{\bf position}}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_ad6cc8015fba1adf399ec3029c980c8f7}{}\label{ensemblemissile_8h_ad6cc8015fba1adf399ec3029c980c8f7}
+
+
+Missile\+Position renvoie 1 si un missile est présent sur la position P, sinon il renvoie 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+{\em P} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier \+: 1 si presence de missile, 0 sinon 
+\end{DoxyReturn}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!set\+Pos\+X\+Ieme\+Missile@{set\+Pos\+X\+Ieme\+Missile}}
+\index{set\+Pos\+X\+Ieme\+Missile@{set\+Pos\+X\+Ieme\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+X\+Ieme\+Missile(ensemblemissile $\ast$\+E\+M, int i, int x)}{setPosXIemeMissile(ensemblemissile *EM, int i, int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+X\+Ieme\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile} $\ast$}]{EM, }
+\item[{int}]{i, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_af25ed6ae9d15d1e745ab08e0e6968d7f}{}\label{ensemblemissile_8h_af25ed6ae9d15d1e745ab08e0e6968d7f}
+
+
+set\+Pos\+X\+Ieme\+Missile modifie la position X du ieme missile de l\textquotesingle{}ensemblemissile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+{\em i} & un entier positif \\
+\hline
+{\em x} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!set\+Pos\+Y\+Ieme\+Missile@{set\+Pos\+Y\+Ieme\+Missile}}
+\index{set\+Pos\+Y\+Ieme\+Missile@{set\+Pos\+Y\+Ieme\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+Y\+Ieme\+Missile(ensemblemissile $\ast$\+E\+M, int i, int y)}{setPosYIemeMissile(ensemblemissile *EM, int i, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+Y\+Ieme\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile} $\ast$}]{EM, }
+\item[{int}]{i, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_acf09ecac9230e569d6187cbd543d2f8b}{}\label{ensemblemissile_8h_acf09ecac9230e569d6187cbd543d2f8b}
+
+
+set\+Pos\+Y\+Ieme\+Missile modifie la position Y du ieme missile de l\textquotesingle{}ensemblemissile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & un ensemblemissile \\
+\hline
+{\em i} & un entier positif \\
+\hline
+{\em y} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!supp\+Ensemble\+Missile@{supp\+Ensemble\+Missile}}
+\index{supp\+Ensemble\+Missile@{supp\+Ensemble\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Ensemble\+Missile(ensemblemissile $\ast$\+E\+M)}{suppEnsembleMissile(ensemblemissile *EM)}}]{\setlength{\rightskip}{0pt plus 5cm}void supp\+Ensemble\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile} $\ast$}]{EM}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_ab695a39a96752a805fc806f4d0dc5553}{}\label{ensemblemissile_8h_ab695a39a96752a805fc806f4d0dc5553}
+
+
+supp\+Ensemble\+Missile supprime l\textquotesingle{}ensemble des missiles 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & pointeur sur la premier case de ensemblemissile \\
+\hline
+\end{DoxyParams}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!supprimer\+Ieme\+Missile@{supprimer\+Ieme\+Missile}}
+\index{supprimer\+Ieme\+Missile@{supprimer\+Ieme\+Missile}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+Ieme\+Missile(ensemblemissile $\ast$\+E\+M, int i)}{supprimerIemeMissile(ensemblemissile *EM, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\+Ieme\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile} $\ast$}]{EM, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_aefa5c69db86cc2f3e083b59435585190}{}\label{ensemblemissile_8h_aefa5c69db86cc2f3e083b59435585190}
+
+
+supprimer\+Ieme\+Missile supprime le ième missile de l\textquotesingle{}ensemble de missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & pointeur sur la premier case de ensemblemissile \\
+\hline
+{\em i} & un entier positif, la place dans le tableau des missiles \\
+\hline
+\end{DoxyParams}
+\index{ensemblemissile.\+h@{ensemblemissile.\+h}!supprimer\+Missile\+Position@{supprimer\+Missile\+Position}}
+\index{supprimer\+Missile\+Position@{supprimer\+Missile\+Position}!ensemblemissile.\+h@{ensemblemissile.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+Missile\+Position(ensemblemissile $\ast$\+E\+M, position P)}{supprimerMissilePosition(ensemblemissile *EM, position P)}}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\+Missile\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemblemissile} $\ast$}]{EM, }
+\item[{{\bf position}}]{P}
+\end{DoxyParamCaption}
+)}\hypertarget{ensemblemissile_8h_ade7dc540cfc91daddbc2fcb5c8a8b198}{}\label{ensemblemissile_8h_ade7dc540cfc91daddbc2fcb5c8a8b198}
+
+
+supprimer\+Missile\+Position supprime le missile de l\textquotesingle{}ensemble de missile dont la position est P 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EM} & pointeur sur la premier case de ensemblemissile \\
+\hline
+{\em P} & une position \\
+\hline
+\end{DoxyParams}

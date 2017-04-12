@@ -1,0 +1,193 @@
+\hypertarget{scores_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/scores.h File Reference}
+\label{scores_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/scores.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/scores.\+h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsscores}{sscores}
+\begin{DoxyCompactList}\small\item\em Represente des scores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsscores}{sscores} {\bfseries scores}\hypertarget{scores_8h_ae49791dc0b412375664e945d049c4a23}{}\label{scores_8h_ae49791dc0b412375664e945d049c4a23}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{scores_8h_ad2fe0e186819d997f3e179d8a0f26dc3}{init\+Meilleur\+Score} (\hyperlink{structsscores}{scores} $\ast$s)
+\begin{DoxyCompactList}\small\item\em init\+Meilleur\+Score initialise le meilleur score \end{DoxyCompactList}\item 
+void \hyperlink{scores_8h_a318c141e697697cfa45ba4e54ff83e99}{init\+Score} (\hyperlink{structsscores}{scores} $\ast$s)
+\begin{DoxyCompactList}\small\item\em init\+Score initialise le score actuel \end{DoxyCompactList}\item 
+void \hyperlink{scores_8h_a68be8f20996bed49ba68b808dbbaa2fc}{init\+Scores} (\hyperlink{structsscores}{scores} $\ast$s)
+\begin{DoxyCompactList}\small\item\em init\+Scores initialise les scores \end{DoxyCompactList}\item 
+void \hyperlink{scores_8h_ad3f09b730e25d0a5b84546a2428a67f8}{set\+Meilleur\+Score} (\hyperlink{structsscores}{scores} $\ast$s)
+\begin{DoxyCompactList}\small\item\em set\+Meilleur\+Score modifie le meilleur score \end{DoxyCompactList}\item 
+void \hyperlink{scores_8h_af33ddf3908e297b371ad6f386b8e52de}{set\+Score} (\hyperlink{structsscores}{scores} $\ast$s, int i)
+\begin{DoxyCompactList}\small\item\em set\+Score modifie le score actuel \end{DoxyCompactList}\item 
+void \hyperlink{scores_8h_ae51fe70e89cea76935693269e4ed3c5d}{ajout\+Score} (\hyperlink{structsscores}{scores} $\ast$s, int i)
+\begin{DoxyCompactList}\small\item\em ajout\+Score ajoute i au score actuel \end{DoxyCompactList}\item 
+int \hyperlink{scores_8h_a667bee7ed579fe5861677d6c2a48ae44}{get\+Meilleur\+Score} (\hyperlink{structsscores}{scores} s)
+\begin{DoxyCompactList}\small\item\em get\+Meilleur\+Score revoie le meilleur score \end{DoxyCompactList}\item 
+int \hyperlink{scores_8h_a7920b8aae69f707495e06a1f469923d7}{get\+Score} (\hyperlink{structsscores}{scores} s)
+\begin{DoxyCompactList}\small\item\em get\+Score renvoie le score actuel \end{DoxyCompactList}\item 
+void \hyperlink{scores_8h_a7dd0b572848af328c28b2457095e71b6}{init\+Sauvegarde} ()\hypertarget{scores_8h_a7dd0b572848af328c28b2457095e71b6}{}\label{scores_8h_a7dd0b572848af328c28b2457095e71b6}
+
+\begin{DoxyCompactList}\small\item\em init\+Sauvegarde initialise le meilleur score sauvegardé à zero \end{DoxyCompactList}\item 
+void \hyperlink{scores_8h_afb8d9d566d6ddd91b4ad1191ce9a001b}{test\+Scores} ()\hypertarget{scores_8h_afb8d9d566d6ddd91b4ad1191ce9a001b}{}\label{scores_8h_afb8d9d566d6ddd91b4ad1191ce9a001b}
+
+\begin{DoxyCompactList}\small\item\em test\+Scores teste toutes les fonctions et procedures sur les scores \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+13 mars 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{scores.\+h@{scores.\+h}!ajout\+Score@{ajout\+Score}}
+\index{ajout\+Score@{ajout\+Score}!scores.\+h@{scores.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+Score(scores $\ast$s, int i)}{ajoutScore(scores *s, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+Score (
+\begin{DoxyParamCaption}
+\item[{{\bf scores} $\ast$}]{s, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{scores_8h_ae51fe70e89cea76935693269e4ed3c5d}{}\label{scores_8h_ae51fe70e89cea76935693269e4ed3c5d}
+
+
+ajout\+Score ajoute i au score actuel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointeur sur scores \\
+\hline
+{\em i} & entier positif pour ajouter au score actuel \\
+\hline
+\end{DoxyParams}
+\index{scores.\+h@{scores.\+h}!get\+Meilleur\+Score@{get\+Meilleur\+Score}}
+\index{get\+Meilleur\+Score@{get\+Meilleur\+Score}!scores.\+h@{scores.\+h}}
+\subsubsection[{\texorpdfstring{get\+Meilleur\+Score(scores s)}{getMeilleurScore(scores s)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Meilleur\+Score (
+\begin{DoxyParamCaption}
+\item[{{\bf scores}}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{scores_8h_a667bee7ed579fe5861677d6c2a48ae44}{}\label{scores_8h_a667bee7ed579fe5861677d6c2a48ae44}
+
+
+get\+Meilleur\+Score revoie le meilleur score 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & un scores \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le meilleur score un entier 
+\end{DoxyReturn}
+\index{scores.\+h@{scores.\+h}!get\+Score@{get\+Score}}
+\index{get\+Score@{get\+Score}!scores.\+h@{scores.\+h}}
+\subsubsection[{\texorpdfstring{get\+Score(scores s)}{getScore(scores s)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Score (
+\begin{DoxyParamCaption}
+\item[{{\bf scores}}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{scores_8h_a7920b8aae69f707495e06a1f469923d7}{}\label{scores_8h_a7920b8aae69f707495e06a1f469923d7}
+
+
+get\+Score renvoie le score actuel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & un scores \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, le score actuel 
+\end{DoxyReturn}
+\index{scores.\+h@{scores.\+h}!init\+Meilleur\+Score@{init\+Meilleur\+Score}}
+\index{init\+Meilleur\+Score@{init\+Meilleur\+Score}!scores.\+h@{scores.\+h}}
+\subsubsection[{\texorpdfstring{init\+Meilleur\+Score(scores $\ast$s)}{initMeilleurScore(scores *s)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Meilleur\+Score (
+\begin{DoxyParamCaption}
+\item[{{\bf scores} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{scores_8h_ad2fe0e186819d997f3e179d8a0f26dc3}{}\label{scores_8h_ad2fe0e186819d997f3e179d8a0f26dc3}
+
+
+init\+Meilleur\+Score initialise le meilleur score 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointeur sur scores \\
+\hline
+\end{DoxyParams}
+\index{scores.\+h@{scores.\+h}!init\+Score@{init\+Score}}
+\index{init\+Score@{init\+Score}!scores.\+h@{scores.\+h}}
+\subsubsection[{\texorpdfstring{init\+Score(scores $\ast$s)}{initScore(scores *s)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Score (
+\begin{DoxyParamCaption}
+\item[{{\bf scores} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{scores_8h_a318c141e697697cfa45ba4e54ff83e99}{}\label{scores_8h_a318c141e697697cfa45ba4e54ff83e99}
+
+
+init\+Score initialise le score actuel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointeur sur scores \\
+\hline
+\end{DoxyParams}
+\index{scores.\+h@{scores.\+h}!init\+Scores@{init\+Scores}}
+\index{init\+Scores@{init\+Scores}!scores.\+h@{scores.\+h}}
+\subsubsection[{\texorpdfstring{init\+Scores(scores $\ast$s)}{initScores(scores *s)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Scores (
+\begin{DoxyParamCaption}
+\item[{{\bf scores} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{scores_8h_a68be8f20996bed49ba68b808dbbaa2fc}{}\label{scores_8h_a68be8f20996bed49ba68b808dbbaa2fc}
+
+
+init\+Scores initialise les scores 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointeur sur scores \\
+\hline
+\end{DoxyParams}
+\index{scores.\+h@{scores.\+h}!set\+Meilleur\+Score@{set\+Meilleur\+Score}}
+\index{set\+Meilleur\+Score@{set\+Meilleur\+Score}!scores.\+h@{scores.\+h}}
+\subsubsection[{\texorpdfstring{set\+Meilleur\+Score(scores $\ast$s)}{setMeilleurScore(scores *s)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Meilleur\+Score (
+\begin{DoxyParamCaption}
+\item[{{\bf scores} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{scores_8h_ad3f09b730e25d0a5b84546a2428a67f8}{}\label{scores_8h_ad3f09b730e25d0a5b84546a2428a67f8}
+
+
+set\+Meilleur\+Score modifie le meilleur score 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointeur sur scores \\
+\hline
+\end{DoxyParams}
+\index{scores.\+h@{scores.\+h}!set\+Score@{set\+Score}}
+\index{set\+Score@{set\+Score}!scores.\+h@{scores.\+h}}
+\subsubsection[{\texorpdfstring{set\+Score(scores $\ast$s, int i)}{setScore(scores *s, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Score (
+\begin{DoxyParamCaption}
+\item[{{\bf scores} $\ast$}]{s, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{scores_8h_af33ddf3908e297b371ad6f386b8e52de}{}\label{scores_8h_af33ddf3908e297b371ad6f386b8e52de}
+
+
+set\+Score modifie le score actuel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointeur sur scores \\
+\hline
+{\em i} & entier positif pour modifier score actuel \\
+\hline
+\end{DoxyParams}

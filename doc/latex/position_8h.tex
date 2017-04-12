@@ -1,0 +1,160 @@
+\hypertarget{position_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/position.h File Reference}
+\label{position_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/position.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/position.\+h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsposition}{sposition}
+\begin{DoxyCompactList}\small\item\em Represente une position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsposition}{sposition} {\bfseries position}\hypertarget{position_8h_aa411655c226051078bfea54e94fdc9b3}{}\label{position_8h_aa411655c226051078bfea54e94fdc9b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{position_8h_a650269dfdb020b134d6da3d1f62b8d09}{init\+Position} (\hyperlink{structsposition}{position} $\ast$p)
+\begin{DoxyCompactList}\small\item\em init\+Position initialise x et y de la structure position \end{DoxyCompactList}\item 
+int \hyperlink{position_8h_aa5816b96e0ab388be5a8878dd577a712}{get\+PosX} (\hyperlink{structsposition}{position} p)
+\begin{DoxyCompactList}\small\item\em get\+PosX renvoie la coordonnée x de la position \end{DoxyCompactList}\item 
+int \hyperlink{position_8h_a0594931094632616696a6dead01dab5b}{get\+PosY} (\hyperlink{structsposition}{position} p)
+\begin{DoxyCompactList}\small\item\em get\+PosY renvoie la coordonnée y de la position \end{DoxyCompactList}\item 
+void \hyperlink{position_8h_a4fefc996a8dfc8f93bbccdd508a6ee3f}{set\+PosX} (\hyperlink{structsposition}{position} $\ast$p, int x)
+\begin{DoxyCompactList}\small\item\em set\+PosX modifie la coordonnée x de la position \end{DoxyCompactList}\item 
+void \hyperlink{position_8h_a24d4099481cde2de76c11b6b59292588}{set\+PosY} (\hyperlink{structsposition}{position} $\ast$p, int y)
+\begin{DoxyCompactList}\small\item\em set\+PosY modifie la coordonnée y de la position \end{DoxyCompactList}\item 
+int \hyperlink{position_8h_a8b1673316379031c38fc749a96fe4f0a}{compare\+Postion} (\hyperlink{structsposition}{position} p1, \hyperlink{structsposition}{position} p2)
+\begin{DoxyCompactList}\small\item\em compare\+Postion compare deux positions, il renvoie 1 si elles sont égales, sinon 0 \end{DoxyCompactList}\item 
+void \hyperlink{position_8h_a41e5159ee49b01aaabcd6d5c853fbddb}{test\+Position} ()\hypertarget{position_8h_a41e5159ee49b01aaabcd6d5c853fbddb}{}\label{position_8h_a41e5159ee49b01aaabcd6d5c853fbddb}
+
+\begin{DoxyCompactList}\small\item\em test\+Position teste les différentes fonctions et procedures sur les positions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09 mars 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{position.\+h@{position.\+h}!compare\+Postion@{compare\+Postion}}
+\index{compare\+Postion@{compare\+Postion}!position.\+h@{position.\+h}}
+\subsubsection[{\texorpdfstring{compare\+Postion(position p1, position p2)}{comparePostion(position p1, position p2)}}]{\setlength{\rightskip}{0pt plus 5cm}int compare\+Postion (
+\begin{DoxyParamCaption}
+\item[{{\bf position}}]{p1, }
+\item[{{\bf position}}]{p2}
+\end{DoxyParamCaption}
+)}\hypertarget{position_8h_a8b1673316379031c38fc749a96fe4f0a}{}\label{position_8h_a8b1673316379031c38fc749a96fe4f0a}
+
+
+compare\+Postion compare deux positions, il renvoie 1 si elles sont égales, sinon 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & une position \\
+\hline
+{\em p2} & une position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier \+: 1 si p1=p2, 0 sinon 
+\end{DoxyReturn}
+\index{position.\+h@{position.\+h}!get\+PosX@{get\+PosX}}
+\index{get\+PosX@{get\+PosX}!position.\+h@{position.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+X(position p)}{getPosX(position p)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+PosX (
+\begin{DoxyParamCaption}
+\item[{{\bf position}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{position_8h_aa5816b96e0ab388be5a8878dd577a712}{}\label{position_8h_aa5816b96e0ab388be5a8878dd577a712}
+
+
+get\+PosX renvoie la coordonnée x de la position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & une position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, la largeur 
+\end{DoxyReturn}
+\index{position.\+h@{position.\+h}!get\+PosY@{get\+PosY}}
+\index{get\+PosY@{get\+PosY}!position.\+h@{position.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Y(position p)}{getPosY(position p)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+PosY (
+\begin{DoxyParamCaption}
+\item[{{\bf position}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{position_8h_a0594931094632616696a6dead01dab5b}{}\label{position_8h_a0594931094632616696a6dead01dab5b}
+
+
+get\+PosY renvoie la coordonnée y de la position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & une position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier ,la hauteur 
+\end{DoxyReturn}
+\index{position.\+h@{position.\+h}!init\+Position@{init\+Position}}
+\index{init\+Position@{init\+Position}!position.\+h@{position.\+h}}
+\subsubsection[{\texorpdfstring{init\+Position(position $\ast$p)}{initPosition(position *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf position} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{position_8h_a650269dfdb020b134d6da3d1f62b8d09}{}\label{position_8h_a650269dfdb020b134d6da3d1f62b8d09}
+
+
+init\+Position initialise x et y de la structure position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & pointeur sur position \\
+\hline
+\end{DoxyParams}
+\index{position.\+h@{position.\+h}!set\+PosX@{set\+PosX}}
+\index{set\+PosX@{set\+PosX}!position.\+h@{position.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+X(position $\ast$p, int x)}{setPosX(position *p, int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+PosX (
+\begin{DoxyParamCaption}
+\item[{{\bf position} $\ast$}]{p, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{position_8h_a4fefc996a8dfc8f93bbccdd508a6ee3f}{}\label{position_8h_a4fefc996a8dfc8f93bbccdd508a6ee3f}
+
+
+set\+PosX modifie la coordonnée x de la position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & pointeur sur position \\
+\hline
+{\em x} & un entier pour modifier \\
+\hline
+\end{DoxyParams}
+\index{position.\+h@{position.\+h}!set\+PosY@{set\+PosY}}
+\index{set\+PosY@{set\+PosY}!position.\+h@{position.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+Y(position $\ast$p, int y)}{setPosY(position *p, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+PosY (
+\begin{DoxyParamCaption}
+\item[{{\bf position} $\ast$}]{p, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{position_8h_a24d4099481cde2de76c11b6b59292588}{}\label{position_8h_a24d4099481cde2de76c11b6b59292588}
+
+
+set\+PosY modifie la coordonnée y de la position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & pointeur sur position \\
+\hline
+{\em y} & un entier pour modifier \\
+\hline
+\end{DoxyParams}

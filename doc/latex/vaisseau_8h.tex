@@ -1,0 +1,293 @@
+\hypertarget{vaisseau_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/vaisseau.h File Reference}
+\label{vaisseau_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/vaisseau.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/vaisseau.\+h}}
+{\ttfamily \#include \char`\"{}position.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsvaisseau}{svaisseau}
+\begin{DoxyCompactList}\small\item\em Represente un vaisseau. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsvaisseau}{svaisseau} {\bfseries vaisseau}\hypertarget{vaisseau_8h_a166ea9ddabe97ecede4e699027ab4fb7}{}\label{vaisseau_8h_a166ea9ddabe97ecede4e699027ab4fb7}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{vaisseau_8h_a2325dd9525e8f341f0e9506988eeaf1a}{init\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} $\ast$v)
+\begin{DoxyCompactList}\small\item\em init\+Vaisseau initialise l\textquotesingle{}identifiant du vaisseau, son nombre de vie, et sa position \end{DoxyCompactList}\item 
+int \hyperlink{vaisseau_8h_a222ae96772d260fe01fdd19887de8fea}{get\+Vie\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} v)
+\begin{DoxyCompactList}\small\item\em get\+Vie\+Vaisseau renvoie le nombre de vie du vaisseau \end{DoxyCompactList}\item 
+void \hyperlink{vaisseau_8h_ab672c0b96f17b154db947e9baca22c8b}{set\+Vie\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} $\ast$v, int i)
+\begin{DoxyCompactList}\small\item\em set\+Vie\+Vaisseau modifie le nombre de vie du vaisseau \end{DoxyCompactList}\item 
+\hyperlink{structsposition}{position} \hyperlink{vaisseau_8h_af66d2f8c62e3044f4daaabf12f8f5db3}{get\+Pos\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} v)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Vaisseau renvoie la position du vaisseau \end{DoxyCompactList}\item 
+int \hyperlink{vaisseau_8h_ad629b873fc49e97289e816ded4c0b096}{get\+Pos\+X\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} v)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+X\+Vaisseau renvoie la position X du vaisseau \end{DoxyCompactList}\item 
+int \hyperlink{vaisseau_8h_a865167280b1a93dc901971e16c75bac2}{get\+Pos\+Y\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} v)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Y\+Vaisseau renvoie la position Y du vaisseau \end{DoxyCompactList}\item 
+void \hyperlink{vaisseau_8h_ae2b8a37a15cf0340f736313a114272b2}{set\+Pos\+X\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} $\ast$v, int x)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+X\+Vaisseau modifie la position X du vaisseau \end{DoxyCompactList}\item 
+void \hyperlink{vaisseau_8h_a489aa42893e479117934ddc986532eb9}{set\+Pos\+Y\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} $\ast$v, int y)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+Y\+Vaisseau modifie la position Y du vaisseau \end{DoxyCompactList}\item 
+int \hyperlink{vaisseau_8h_a8b34fa487a0b86a0065df7b9236cc42f}{get\+Id\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} v)
+\begin{DoxyCompactList}\small\item\em get\+Id\+Vaisseau renvoie l\textquotesingle{}indentifiant du vaisseau \end{DoxyCompactList}\item 
+void \hyperlink{vaisseau_8h_aa5ae5944e9d4c781f2a121008dfda60b}{set\+Id\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} $\ast$v, int i)
+\begin{DoxyCompactList}\small\item\em set\+Id\+Vaisseau modifie l\textquotesingle{}identifiant du vaisseau \end{DoxyCompactList}\item 
+\hyperlink{structsvaisseau}{vaisseau} \hyperlink{vaisseau_8h_a59af1cb35c017cf3e9b14c8d5db64b24}{creation\+Vaisseau} (int id, int vie, int x, int y)
+\begin{DoxyCompactList}\small\item\em creation\+Vaisseau creer un nouveau vaisseau et renvoie ses caractéristiques \end{DoxyCompactList}\item 
+int \hyperlink{vaisseau_8h_a547d153aa2d27282e03f9194ce419853}{supp\+Vie\+Vaisseau} (\hyperlink{structsvaisseau}{vaisseau} $\ast$v)
+\begin{DoxyCompactList}\small\item\em supp\+Vie\+Vaisseau supprime une vie au vaisseau, et retourne 1 si le vaisseau est supprimé \end{DoxyCompactList}\item 
+void \hyperlink{vaisseau_8h_a377ea762e577ac8c36c5ff08df5e7a37}{test\+Vaisseau} ()\hypertarget{vaisseau_8h_a377ea762e577ac8c36c5ff08df5e7a37}{}\label{vaisseau_8h_a377ea762e577ac8c36c5ff08df5e7a37}
+
+\begin{DoxyCompactList}\small\item\em test\+Vaisseau teste toutes les fonctions et procédures sur Vaisseau \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14 mars 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{vaisseau.\+h@{vaisseau.\+h}!creation\+Vaisseau@{creation\+Vaisseau}}
+\index{creation\+Vaisseau@{creation\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{creation\+Vaisseau(int id, int vie, int x, int y)}{creationVaisseau(int id, int vie, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vaisseau} creation\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{vie, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_a59af1cb35c017cf3e9b14c8d5db64b24}{}\label{vaisseau_8h_a59af1cb35c017cf3e9b14c8d5db64b24}
+
+
+creation\+Vaisseau creer un nouveau vaisseau et renvoie ses caractéristiques 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & entier positif \\
+\hline
+{\em vie} & entier positif \\
+\hline
+{\em x} & entier positif \\
+\hline
+{\em y} & entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un vaisseau et ses caractéristiques 
+\end{DoxyReturn}
+\index{vaisseau.\+h@{vaisseau.\+h}!get\+Id\+Vaisseau@{get\+Id\+Vaisseau}}
+\index{get\+Id\+Vaisseau@{get\+Id\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Id\+Vaisseau(vaisseau v)}{getIdVaisseau(vaisseau v)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Id\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_a8b34fa487a0b86a0065df7b9236cc42f}{}\label{vaisseau_8h_a8b34fa487a0b86a0065df7b9236cc42f}
+
+
+get\+Id\+Vaisseau renvoie l\textquotesingle{}indentifiant du vaisseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & un vaisseau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier positif, l\textquotesingle{}identifiant du vaisseau 
+\end{DoxyReturn}
+\index{vaisseau.\+h@{vaisseau.\+h}!get\+Pos\+Vaisseau@{get\+Pos\+Vaisseau}}
+\index{get\+Pos\+Vaisseau@{get\+Pos\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Vaisseau(vaisseau v)}{getPosVaisseau(vaisseau v)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf position} get\+Pos\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_af66d2f8c62e3044f4daaabf12f8f5db3}{}\label{vaisseau_8h_af66d2f8c62e3044f4daaabf12f8f5db3}
+
+
+get\+Pos\+Vaisseau renvoie la position du vaisseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & un vaisseau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la position du vaisseau 
+\end{DoxyReturn}
+\index{vaisseau.\+h@{vaisseau.\+h}!get\+Pos\+X\+Vaisseau@{get\+Pos\+X\+Vaisseau}}
+\index{get\+Pos\+X\+Vaisseau@{get\+Pos\+X\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+X\+Vaisseau(vaisseau v)}{getPosXVaisseau(vaisseau v)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Pos\+X\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_ad629b873fc49e97289e816ded4c0b096}{}\label{vaisseau_8h_ad629b873fc49e97289e816ded4c0b096}
+
+
+get\+Pos\+X\+Vaisseau renvoie la position X du vaisseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & un vaisseau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier positif, la position X du vaisseau 
+\end{DoxyReturn}
+\index{vaisseau.\+h@{vaisseau.\+h}!get\+Pos\+Y\+Vaisseau@{get\+Pos\+Y\+Vaisseau}}
+\index{get\+Pos\+Y\+Vaisseau@{get\+Pos\+Y\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Y\+Vaisseau(vaisseau v)}{getPosYVaisseau(vaisseau v)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Pos\+Y\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_a865167280b1a93dc901971e16c75bac2}{}\label{vaisseau_8h_a865167280b1a93dc901971e16c75bac2}
+
+
+get\+Pos\+Y\+Vaisseau renvoie la position Y du vaisseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & un vaisseau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier positif, la position Y du vaisseau 
+\end{DoxyReturn}
+\index{vaisseau.\+h@{vaisseau.\+h}!get\+Vie\+Vaisseau@{get\+Vie\+Vaisseau}}
+\index{get\+Vie\+Vaisseau@{get\+Vie\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Vie\+Vaisseau(vaisseau v)}{getVieVaisseau(vaisseau v)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Vie\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_a222ae96772d260fe01fdd19887de8fea}{}\label{vaisseau_8h_a222ae96772d260fe01fdd19887de8fea}
+
+
+get\+Vie\+Vaisseau renvoie le nombre de vie du vaisseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & un vaisseau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier positif, nombre de vie du vaisseau 
+\end{DoxyReturn}
+\index{vaisseau.\+h@{vaisseau.\+h}!init\+Vaisseau@{init\+Vaisseau}}
+\index{init\+Vaisseau@{init\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{init\+Vaisseau(vaisseau $\ast$v)}{initVaisseau(vaisseau *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau} $\ast$}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_a2325dd9525e8f341f0e9506988eeaf1a}{}\label{vaisseau_8h_a2325dd9525e8f341f0e9506988eeaf1a}
+
+
+init\+Vaisseau initialise l\textquotesingle{}identifiant du vaisseau, son nombre de vie, et sa position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & pointeur sur vaisseau \\
+\hline
+\end{DoxyParams}
+\index{vaisseau.\+h@{vaisseau.\+h}!set\+Id\+Vaisseau@{set\+Id\+Vaisseau}}
+\index{set\+Id\+Vaisseau@{set\+Id\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{set\+Id\+Vaisseau(vaisseau $\ast$v, int i)}{setIdVaisseau(vaisseau *v, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Id\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau} $\ast$}]{v, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_aa5ae5944e9d4c781f2a121008dfda60b}{}\label{vaisseau_8h_aa5ae5944e9d4c781f2a121008dfda60b}
+
+
+set\+Id\+Vaisseau modifie l\textquotesingle{}identifiant du vaisseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & pointeur sur vaisseau \\
+\hline
+{\em i} & entier positif pour modifier \\
+\hline
+\end{DoxyParams}
+\index{vaisseau.\+h@{vaisseau.\+h}!set\+Pos\+X\+Vaisseau@{set\+Pos\+X\+Vaisseau}}
+\index{set\+Pos\+X\+Vaisseau@{set\+Pos\+X\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+X\+Vaisseau(vaisseau $\ast$v, int x)}{setPosXVaisseau(vaisseau *v, int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+X\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau} $\ast$}]{v, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_ae2b8a37a15cf0340f736313a114272b2}{}\label{vaisseau_8h_ae2b8a37a15cf0340f736313a114272b2}
+
+
+set\+Pos\+X\+Vaisseau modifie la position X du vaisseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & pointeur sur vaisseau \\
+\hline
+{\em x} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{vaisseau.\+h@{vaisseau.\+h}!set\+Pos\+Y\+Vaisseau@{set\+Pos\+Y\+Vaisseau}}
+\index{set\+Pos\+Y\+Vaisseau@{set\+Pos\+Y\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+Y\+Vaisseau(vaisseau $\ast$v, int y)}{setPosYVaisseau(vaisseau *v, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+Y\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau} $\ast$}]{v, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_a489aa42893e479117934ddc986532eb9}{}\label{vaisseau_8h_a489aa42893e479117934ddc986532eb9}
+
+
+set\+Pos\+Y\+Vaisseau modifie la position Y du vaisseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & pointeur sur vaisseau \\
+\hline
+{\em y} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{vaisseau.\+h@{vaisseau.\+h}!set\+Vie\+Vaisseau@{set\+Vie\+Vaisseau}}
+\index{set\+Vie\+Vaisseau@{set\+Vie\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{set\+Vie\+Vaisseau(vaisseau $\ast$v, int i)}{setVieVaisseau(vaisseau *v, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Vie\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau} $\ast$}]{v, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_ab672c0b96f17b154db947e9baca22c8b}{}\label{vaisseau_8h_ab672c0b96f17b154db947e9baca22c8b}
+
+
+set\+Vie\+Vaisseau modifie le nombre de vie du vaisseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & pointeur sur vaisseau \\
+\hline
+{\em i} & entier positif pour modifier \\
+\hline
+\end{DoxyParams}
+\index{vaisseau.\+h@{vaisseau.\+h}!supp\+Vie\+Vaisseau@{supp\+Vie\+Vaisseau}}
+\index{supp\+Vie\+Vaisseau@{supp\+Vie\+Vaisseau}!vaisseau.\+h@{vaisseau.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Vie\+Vaisseau(vaisseau $\ast$v)}{suppVieVaisseau(vaisseau *v)}}]{\setlength{\rightskip}{0pt plus 5cm}int supp\+Vie\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf vaisseau} $\ast$}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{vaisseau_8h_a547d153aa2d27282e03f9194ce419853}{}\label{vaisseau_8h_a547d153aa2d27282e03f9194ce419853}
+
+
+supp\+Vie\+Vaisseau supprime une vie au vaisseau, et retourne 1 si le vaisseau est supprimé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & pointeur sur vaisseau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier \+: 1 si le vaisseau est supprimé et 0 sinon 
+\end{DoxyReturn}

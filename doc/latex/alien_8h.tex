@@ -1,0 +1,272 @@
+\hypertarget{alien_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/alien.h File Reference}
+\label{alien_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/alien.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/alien.\+h}}
+{\ttfamily \#include \char`\"{}position.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsalien}{salien}
+\begin{DoxyCompactList}\small\item\em Represente un alien. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsalien}{salien} {\bfseries alien}\hypertarget{alien_8h_a744426882eafdfe50db2886e36e72ee9}{}\label{alien_8h_a744426882eafdfe50db2886e36e72ee9}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{alien_8h_aeb918f5a924c48f03f33a2c10820dcdb}{init\+Alien} (\hyperlink{structsalien}{alien} $\ast$a)
+\begin{DoxyCompactList}\small\item\em init\+Alien initialise l\textquotesingle{}identifiant de l\textquotesingle{}alien, son nombre de vie et sa position dans la structure alien \end{DoxyCompactList}\item 
+int \hyperlink{alien_8h_ab8b94f6bca7eb8c03aa19da2210ff1ae}{get\+Vie\+Alien} (\hyperlink{structsalien}{alien} a)
+\begin{DoxyCompactList}\small\item\em get\+Vie\+Alien renvoie le nombre de vie de l\textquotesingle{}alien \end{DoxyCompactList}\item 
+void \hyperlink{alien_8h_a612d5e8beeaddea336e5baa589d139dc}{set\+Vie\+Alien} (\hyperlink{structsalien}{alien} $\ast$a, int i)
+\begin{DoxyCompactList}\small\item\em set\+Vie\+Alien modifie le nombre de vie de l\textquotesingle{}alien \end{DoxyCompactList}\item 
+\hyperlink{structsposition}{position} \hyperlink{alien_8h_ad7c4198115118a01b9be9ef8179c265b}{get\+Pos\+Alien} (\hyperlink{structsalien}{alien} a)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Alien renvoie la position de l\textquotesingle{}alien \end{DoxyCompactList}\item 
+int \hyperlink{alien_8h_a6cefa2d1650aaccbdbc4a4a6277642dc}{get\+Pos\+X\+Alien} (\hyperlink{structsalien}{alien} a)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+X\+Alien renvoie la position X de l\textquotesingle{}alien \end{DoxyCompactList}\item 
+int \hyperlink{alien_8h_a96032643175306e8a1660afd234d3954}{get\+Pos\+Y\+Alien} (\hyperlink{structsalien}{alien} a)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Y\+Alien renvoie la position Y de l\textquotesingle{}alien \end{DoxyCompactList}\item 
+void \hyperlink{alien_8h_acdec1ae3abefd3630feea7bb8001c1a1}{set\+Pos\+X\+Alien} (\hyperlink{structsalien}{alien} $\ast$a, int x)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+Alien modifie la position X de l\textquotesingle{}alien \end{DoxyCompactList}\item 
+void \hyperlink{alien_8h_aa1c60e6cec5d08de5def1cef0e537d43}{set\+Pos\+Y\+Alien} (\hyperlink{structsalien}{alien} $\ast$a, int y)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+Alien modifie la position Y de l\textquotesingle{}alien \end{DoxyCompactList}\item 
+int \hyperlink{alien_8h_a8874a328fd318c02ecc904f72a018cf3}{get\+Id\+Alien} (\hyperlink{structsalien}{alien} a)
+\begin{DoxyCompactList}\small\item\em get\+Id\+Alien renvoie l\textquotesingle{}indentifiant de l\textquotesingle{}alien \end{DoxyCompactList}\item 
+void \hyperlink{alien_8h_a687b7d89db0a39e27f6c707a52e1e223}{set\+Id\+Alien} (\hyperlink{structsalien}{alien} $\ast$a, int i)
+\begin{DoxyCompactList}\small\item\em set\+Id\+Alien modifie l\textquotesingle{}identifiant de l\textquotesingle{}alien \end{DoxyCompactList}\item 
+\hyperlink{structsalien}{alien} \hyperlink{alien_8h_a28ca85eb7fc61411947a85e4faa4e564}{creation\+Alien} (int id, int vie, int x, int y)
+\begin{DoxyCompactList}\small\item\em creation\+Alien renvoie un alien avec ses caractéristiques \end{DoxyCompactList}\item 
+void \hyperlink{alien_8h_ab9df796464840ba976e5d1f3382eed88}{test\+Alien} ()\hypertarget{alien_8h_ab9df796464840ba976e5d1f3382eed88}{}\label{alien_8h_ab9df796464840ba976e5d1f3382eed88}
+
+\begin{DoxyCompactList}\small\item\em test\+Alien teste toutes les fonctions et procédures sur alien \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 avril 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{alien.\+h@{alien.\+h}!creation\+Alien@{creation\+Alien}}
+\index{creation\+Alien@{creation\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{creation\+Alien(int id, int vie, int x, int y)}{creationAlien(int id, int vie, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf alien} creation\+Alien (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{vie, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_a28ca85eb7fc61411947a85e4faa4e564}{}\label{alien_8h_a28ca85eb7fc61411947a85e4faa4e564}
+
+
+creation\+Alien renvoie un alien avec ses caractéristiques 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & un entier positif \\
+\hline
+{\em vie} & un entier positif \\
+\hline
+{\em x} & un entier positif \\
+\hline
+{\em y} & un entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un alien 
+\end{DoxyReturn}
+\index{alien.\+h@{alien.\+h}!get\+Id\+Alien@{get\+Id\+Alien}}
+\index{get\+Id\+Alien@{get\+Id\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Id\+Alien(alien a)}{getIdAlien(alien a)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Id\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf alien}}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_a8874a328fd318c02ecc904f72a018cf3}{}\label{alien_8h_a8874a328fd318c02ecc904f72a018cf3}
+
+
+get\+Id\+Alien renvoie l\textquotesingle{}indentifiant de l\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & un alien \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, l\textquotesingle{}identifiant de l\textquotesingle{}alien 
+\end{DoxyReturn}
+\index{alien.\+h@{alien.\+h}!get\+Pos\+Alien@{get\+Pos\+Alien}}
+\index{get\+Pos\+Alien@{get\+Pos\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Alien(alien a)}{getPosAlien(alien a)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf position} get\+Pos\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf alien}}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_ad7c4198115118a01b9be9ef8179c265b}{}\label{alien_8h_ad7c4198115118a01b9be9ef8179c265b}
+
+
+get\+Pos\+Alien renvoie la position de l\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & un alien \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la position de l\textquotesingle{}alien 
+\end{DoxyReturn}
+\index{alien.\+h@{alien.\+h}!get\+Pos\+X\+Alien@{get\+Pos\+X\+Alien}}
+\index{get\+Pos\+X\+Alien@{get\+Pos\+X\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+X\+Alien(alien a)}{getPosXAlien(alien a)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Pos\+X\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf alien}}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_a6cefa2d1650aaccbdbc4a4a6277642dc}{}\label{alien_8h_a6cefa2d1650aaccbdbc4a4a6277642dc}
+
+
+get\+Pos\+X\+Alien renvoie la position X de l\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & un alien \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, la position X de l\textquotesingle{}alien 
+\end{DoxyReturn}
+\index{alien.\+h@{alien.\+h}!get\+Pos\+Y\+Alien@{get\+Pos\+Y\+Alien}}
+\index{get\+Pos\+Y\+Alien@{get\+Pos\+Y\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Y\+Alien(alien a)}{getPosYAlien(alien a)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Pos\+Y\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf alien}}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_a96032643175306e8a1660afd234d3954}{}\label{alien_8h_a96032643175306e8a1660afd234d3954}
+
+
+get\+Pos\+Y\+Alien renvoie la position Y de l\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & un alien \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier, la position Y de l\textquotesingle{}alien 
+\end{DoxyReturn}
+\index{alien.\+h@{alien.\+h}!get\+Vie\+Alien@{get\+Vie\+Alien}}
+\index{get\+Vie\+Alien@{get\+Vie\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{get\+Vie\+Alien(alien a)}{getVieAlien(alien a)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Vie\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf alien}}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_ab8b94f6bca7eb8c03aa19da2210ff1ae}{}\label{alien_8h_ab8b94f6bca7eb8c03aa19da2210ff1ae}
+
+
+get\+Vie\+Alien renvoie le nombre de vie de l\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & un alien \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le nombre de vie l\textquotesingle{}alien un entier 
+\end{DoxyReturn}
+\index{alien.\+h@{alien.\+h}!init\+Alien@{init\+Alien}}
+\index{init\+Alien@{init\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{init\+Alien(alien $\ast$a)}{initAlien(alien *a)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf alien} $\ast$}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_aeb918f5a924c48f03f33a2c10820dcdb}{}\label{alien_8h_aeb918f5a924c48f03f33a2c10820dcdb}
+
+
+init\+Alien initialise l\textquotesingle{}identifiant de l\textquotesingle{}alien, son nombre de vie et sa position dans la structure alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & pointeur sur un alien \\
+\hline
+\end{DoxyParams}
+\index{alien.\+h@{alien.\+h}!set\+Id\+Alien@{set\+Id\+Alien}}
+\index{set\+Id\+Alien@{set\+Id\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{set\+Id\+Alien(alien $\ast$a, int i)}{setIdAlien(alien *a, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Id\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf alien} $\ast$}]{a, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_a687b7d89db0a39e27f6c707a52e1e223}{}\label{alien_8h_a687b7d89db0a39e27f6c707a52e1e223}
+
+
+set\+Id\+Alien modifie l\textquotesingle{}identifiant de l\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & un pointeur sur alien \\
+\hline
+{\em i} & un entier positif pour modifier \\
+\hline
+\end{DoxyParams}
+\index{alien.\+h@{alien.\+h}!set\+Pos\+X\+Alien@{set\+Pos\+X\+Alien}}
+\index{set\+Pos\+X\+Alien@{set\+Pos\+X\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+X\+Alien(alien $\ast$a, int x)}{setPosXAlien(alien *a, int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+X\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf alien} $\ast$}]{a, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_acdec1ae3abefd3630feea7bb8001c1a1}{}\label{alien_8h_acdec1ae3abefd3630feea7bb8001c1a1}
+
+
+set\+Pos\+Alien modifie la position X de l\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & pointeur sur alien \\
+\hline
+{\em x} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{alien.\+h@{alien.\+h}!set\+Pos\+Y\+Alien@{set\+Pos\+Y\+Alien}}
+\index{set\+Pos\+Y\+Alien@{set\+Pos\+Y\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+Y\+Alien(alien $\ast$a, int y)}{setPosYAlien(alien *a, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+Y\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf alien} $\ast$}]{a, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_aa1c60e6cec5d08de5def1cef0e537d43}{}\label{alien_8h_aa1c60e6cec5d08de5def1cef0e537d43}
+
+
+set\+Pos\+Alien modifie la position Y de l\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & pointeur sur alien \\
+\hline
+{\em y} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{alien.\+h@{alien.\+h}!set\+Vie\+Alien@{set\+Vie\+Alien}}
+\index{set\+Vie\+Alien@{set\+Vie\+Alien}!alien.\+h@{alien.\+h}}
+\subsubsection[{\texorpdfstring{set\+Vie\+Alien(alien $\ast$a, int i)}{setVieAlien(alien *a, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Vie\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf alien} $\ast$}]{a, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{alien_8h_a612d5e8beeaddea336e5baa589d139dc}{}\label{alien_8h_a612d5e8beeaddea336e5baa589d139dc}
+
+
+set\+Vie\+Alien modifie le nombre de vie de l\textquotesingle{}alien 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & pointeur sur alien \\
+\hline
+{\em i} & entier positif pour modifier \\
+\hline
+\end{DoxyParams}

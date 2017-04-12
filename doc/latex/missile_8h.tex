@@ -1,0 +1,260 @@
+\hypertarget{missile_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/missile.h File Reference}
+\label{missile_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/missile.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/missile.\+h}}
+{\ttfamily \#include \char`\"{}position.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsmissile}{smissile}
+\begin{DoxyCompactList}\small\item\em Represente un missile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsmissile}{smissile} {\bfseries missile}\hypertarget{missile_8h_aaff559d59c49d23e21772c6c284f03e3}{}\label{missile_8h_aaff559d59c49d23e21772c6c284f03e3}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{missile_8h_a1dbc7ff3502546230501b044648e949f}{init\+Missile} (\hyperlink{structsmissile}{missile} $\ast$m)
+\begin{DoxyCompactList}\small\item\em init\+Missile initialise l\textquotesingle{}identifiant du missile puis la position (apres verification) de la structure missile \end{DoxyCompactList}\item 
+void \hyperlink{missile_8h_a6b5333449c14c7b5605d6318eca75bc1}{set\+Pos\+X\+Missile} (\hyperlink{structsmissile}{missile} $\ast$m, int x)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+X\+Missile modifie la position x du missile \end{DoxyCompactList}\item 
+void \hyperlink{missile_8h_a74e1628b4c11032ddb0a5051d5db9f07}{set\+Pos\+Y\+Missile} (\hyperlink{structsmissile}{missile} $\ast$m, int y)
+\begin{DoxyCompactList}\small\item\em set\+Pos\+Y\+Missile modifie la position x du missile \end{DoxyCompactList}\item 
+\hyperlink{structsposition}{position} \hyperlink{missile_8h_a93f8f336259b9f5d437a2134b1fe54f0}{get\+Pos\+Missile} (\hyperlink{structsmissile}{missile} m)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Missile récupère la position d\textquotesingle{}un missile \end{DoxyCompactList}\item 
+int \hyperlink{missile_8h_ac3946b27b7487f24524c42fb0b3e689d}{get\+Pos\+X\+Missile} (\hyperlink{structsmissile}{missile} m)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+X\+Missile récupère la postion x d\textquotesingle{}un missile \end{DoxyCompactList}\item 
+int \hyperlink{missile_8h_a59df1aa112ddbe378251450a4d622723}{get\+Pos\+Y\+Missile} (\hyperlink{structsmissile}{missile} m)
+\begin{DoxyCompactList}\small\item\em get\+Pos\+Y\+Missile récupère la postion Y d\textquotesingle{}un missile \end{DoxyCompactList}\item 
+int \hyperlink{missile_8h_a7ea4bd3b13f5f8aa9d8adb59f7a53f3f}{get\+Id\+Missile} (\hyperlink{structsmissile}{missile} m)
+\begin{DoxyCompactList}\small\item\em get\+Id\+Missile récupère l\textquotesingle{}identifiant d\textquotesingle{}un missile \end{DoxyCompactList}\item 
+void \hyperlink{missile_8h_a4b58e0d6a8be72781905ebcd96e1d5dc}{set\+Id\+Missile} (\hyperlink{structsmissile}{missile} $\ast$m, int i)
+\begin{DoxyCompactList}\small\item\em set\+Id\+Missile modifie l\textquotesingle{}identifiant d\textquotesingle{}un missile \end{DoxyCompactList}\item 
+int \hyperlink{missile_8h_a1f56ab7effb03d8217d932b26601836e}{get\+Niv\+Missile} (\hyperlink{structsmissile}{missile} m)
+\begin{DoxyCompactList}\small\item\em get\+Niv\+Missile récupère le niveau d\textquotesingle{}un missile \end{DoxyCompactList}\item 
+void \hyperlink{missile_8h_a6d549233694dbbcc175d47f4ca7adbe9}{set\+Niv\+Missile} (\hyperlink{structsmissile}{missile} $\ast$m, int i)
+\begin{DoxyCompactList}\small\item\em set\+Niv\+Missile modifie le niveau du missile \end{DoxyCompactList}\item 
+void \hyperlink{missile_8h_a46919f013ec5701fe49a2afd0bcc3189}{supp\+Missile} (\hyperlink{structsmissile}{missile} $\ast$m)
+\begin{DoxyCompactList}\small\item\em supp\+Missile supprime le missile,il met son identifiant à 0, le niveau à 1, et sa position est alors (-\/1,-\/1) \end{DoxyCompactList}\item 
+void \hyperlink{missile_8h_aeec9d72487a639252716483307335ca4}{test\+Missile} ()\hypertarget{missile_8h_aeec9d72487a639252716483307335ca4}{}\label{missile_8h_aeec9d72487a639252716483307335ca4}
+
+\begin{DoxyCompactList}\small\item\em test\+Missile teste l\textquotesingle{}ensemble des fonctions et procedures sur les missiles \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09 mars 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{missile.\+h@{missile.\+h}!get\+Id\+Missile@{get\+Id\+Missile}}
+\index{get\+Id\+Missile@{get\+Id\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Id\+Missile(missile m)}{getIdMissile(missile m)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Id\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile}}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_a7ea4bd3b13f5f8aa9d8adb59f7a53f3f}{}\label{missile_8h_a7ea4bd3b13f5f8aa9d8adb59f7a53f3f}
+
+
+get\+Id\+Missile récupère l\textquotesingle{}identifiant d\textquotesingle{}un missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur missile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}identifiant du missile un entier 
+\end{DoxyReturn}
+\index{missile.\+h@{missile.\+h}!get\+Niv\+Missile@{get\+Niv\+Missile}}
+\index{get\+Niv\+Missile@{get\+Niv\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Niv\+Missile(missile m)}{getNivMissile(missile m)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Niv\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile}}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_a1f56ab7effb03d8217d932b26601836e}{}\label{missile_8h_a1f56ab7effb03d8217d932b26601836e}
+
+
+get\+Niv\+Missile récupère le niveau d\textquotesingle{}un missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & un missile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le niveau du missile 
+\end{DoxyReturn}
+\index{missile.\+h@{missile.\+h}!get\+Pos\+Missile@{get\+Pos\+Missile}}
+\index{get\+Pos\+Missile@{get\+Pos\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Missile(missile m)}{getPosMissile(missile m)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf position} get\+Pos\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile}}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_a93f8f336259b9f5d437a2134b1fe54f0}{}\label{missile_8h_a93f8f336259b9f5d437a2134b1fe54f0}
+
+
+get\+Pos\+Missile récupère la position d\textquotesingle{}un missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & un missile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la position du missile 
+\end{DoxyReturn}
+\index{missile.\+h@{missile.\+h}!get\+Pos\+X\+Missile@{get\+Pos\+X\+Missile}}
+\index{get\+Pos\+X\+Missile@{get\+Pos\+X\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+X\+Missile(missile m)}{getPosXMissile(missile m)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Pos\+X\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile}}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_ac3946b27b7487f24524c42fb0b3e689d}{}\label{missile_8h_ac3946b27b7487f24524c42fb0b3e689d}
+
+
+get\+Pos\+X\+Missile récupère la postion x d\textquotesingle{}un missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur missile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la position X du missile un entier 
+\end{DoxyReturn}
+\index{missile.\+h@{missile.\+h}!get\+Pos\+Y\+Missile@{get\+Pos\+Y\+Missile}}
+\index{get\+Pos\+Y\+Missile@{get\+Pos\+Y\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{get\+Pos\+Y\+Missile(missile m)}{getPosYMissile(missile m)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Pos\+Y\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile}}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_a59df1aa112ddbe378251450a4d622723}{}\label{missile_8h_a59df1aa112ddbe378251450a4d622723}
+
+
+get\+Pos\+Y\+Missile récupère la postion Y d\textquotesingle{}un missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur missile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la position Y du missile un entier 
+\end{DoxyReturn}
+\index{missile.\+h@{missile.\+h}!init\+Missile@{init\+Missile}}
+\index{init\+Missile@{init\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{init\+Missile(missile $\ast$m)}{initMissile(missile *m)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile} $\ast$}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_a1dbc7ff3502546230501b044648e949f}{}\label{missile_8h_a1dbc7ff3502546230501b044648e949f}
+
+
+init\+Missile initialise l\textquotesingle{}identifiant du missile puis la position (apres verification) de la structure missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur missile \\
+\hline
+\end{DoxyParams}
+\index{missile.\+h@{missile.\+h}!set\+Id\+Missile@{set\+Id\+Missile}}
+\index{set\+Id\+Missile@{set\+Id\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{set\+Id\+Missile(missile $\ast$m, int i)}{setIdMissile(missile *m, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Id\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile} $\ast$}]{m, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_a4b58e0d6a8be72781905ebcd96e1d5dc}{}\label{missile_8h_a4b58e0d6a8be72781905ebcd96e1d5dc}
+
+
+set\+Id\+Missile modifie l\textquotesingle{}identifiant d\textquotesingle{}un missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur missile \\
+\hline
+{\em i} & un entier positif pour modifier \\
+\hline
+\end{DoxyParams}
+\index{missile.\+h@{missile.\+h}!set\+Niv\+Missile@{set\+Niv\+Missile}}
+\index{set\+Niv\+Missile@{set\+Niv\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{set\+Niv\+Missile(missile $\ast$m, int i)}{setNivMissile(missile *m, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Niv\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile} $\ast$}]{m, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_a6d549233694dbbcc175d47f4ca7adbe9}{}\label{missile_8h_a6d549233694dbbcc175d47f4ca7adbe9}
+
+
+set\+Niv\+Missile modifie le niveau du missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur missile \\
+\hline
+{\em i} & un entier positif pour modifier \\
+\hline
+\end{DoxyParams}
+\index{missile.\+h@{missile.\+h}!set\+Pos\+X\+Missile@{set\+Pos\+X\+Missile}}
+\index{set\+Pos\+X\+Missile@{set\+Pos\+X\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+X\+Missile(missile $\ast$m, int x)}{setPosXMissile(missile *m, int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+X\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile} $\ast$}]{m, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_a6b5333449c14c7b5605d6318eca75bc1}{}\label{missile_8h_a6b5333449c14c7b5605d6318eca75bc1}
+
+
+set\+Pos\+X\+Missile modifie la position x du missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur missile \\
+\hline
+{\em x} & un entier positif pour modifier \\
+\hline
+\end{DoxyParams}
+\index{missile.\+h@{missile.\+h}!set\+Pos\+Y\+Missile@{set\+Pos\+Y\+Missile}}
+\index{set\+Pos\+Y\+Missile@{set\+Pos\+Y\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{set\+Pos\+Y\+Missile(missile $\ast$m, int y)}{setPosYMissile(missile *m, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Pos\+Y\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile} $\ast$}]{m, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_a74e1628b4c11032ddb0a5051d5db9f07}{}\label{missile_8h_a74e1628b4c11032ddb0a5051d5db9f07}
+
+
+set\+Pos\+Y\+Missile modifie la position x du missile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur missile \\
+\hline
+{\em y} & un entier positif pour modifier \\
+\hline
+\end{DoxyParams}
+\index{missile.\+h@{missile.\+h}!supp\+Missile@{supp\+Missile}}
+\index{supp\+Missile@{supp\+Missile}!missile.\+h@{missile.\+h}}
+\subsubsection[{\texorpdfstring{supp\+Missile(missile $\ast$m)}{suppMissile(missile *m)}}]{\setlength{\rightskip}{0pt plus 5cm}void supp\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf missile} $\ast$}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{missile_8h_a46919f013ec5701fe49a2afd0bcc3189}{}\label{missile_8h_a46919f013ec5701fe49a2afd0bcc3189}
+
+
+supp\+Missile supprime le missile,il met son identifiant à 0, le niveau à 1, et sa position est alors (-\/1,-\/1) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur missile \\
+\hline
+\end{DoxyParams}

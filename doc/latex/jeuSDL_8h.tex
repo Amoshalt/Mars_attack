@@ -1,0 +1,303 @@
+\hypertarget{jeuSDL_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/jeu\+S\+DL.h File Reference}
+\label{jeuSDL_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/jeu\+S\+D\+L.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/jeu\+S\+D\+L.\+h}}
+{\ttfamily \#include \char`\"{}jeu.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+image.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsimage}{simage}
+\begin{DoxyCompactList}\small\item\em Represente une image en S\+DL. \end{DoxyCompactList}\item 
+struct \hyperlink{structsjeusdl}{sjeusdl}
+\begin{DoxyCompactList}\small\item\em Represente un jeu en S\+DL. \end{DoxyCompactList}\item 
+struct \hyperlink{structsbouton}{sbouton}
+\begin{DoxyCompactList}\small\item\em Represente un bouton en S\+DL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsimage}{simage} {\bfseries image}\hypertarget{jeuSDL_8h_af5b5a41fd3c2690f6c866ede7c416446}{}\label{jeuSDL_8h_af5b5a41fd3c2690f6c866ede7c416446}
+
+\item 
+typedef struct \hyperlink{structsjeusdl}{sjeusdl} {\bfseries jeusdl}\hypertarget{jeuSDL_8h_a366d1e30fb56824c7284cb3a8c347c59}{}\label{jeuSDL_8h_a366d1e30fb56824c7284cb3a8c347c59}
+
+\item 
+typedef struct \hyperlink{structsbouton}{sbouton} {\bfseries bouton}\hypertarget{jeuSDL_8h_a7b6d77d2567b95b4b84e3e46b3d1162e}{}\label{jeuSDL_8h_a7b6d77d2567b95b4b84e3e46b3d1162e}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{jeuSDL_8h_a53c09b52664fd3f16e8d8fbc246bde50}{init\+S\+DL} (\hyperlink{structsjeusdl}{jeusdl} $\ast$jsdl)
+\begin{DoxyCompactList}\small\item\em init\+Jeu initialise la S\+DL, charge les images, et initialise le jeu \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_aa00dc3649aee86773ba06b0fd871d1ee}{chargementimage} (const char $\ast$nomfichier, \hyperlink{structsjeusdl}{jeusdl} $\ast$jsdl, \hyperlink{structsimage}{image} $\ast$IM)
+\begin{DoxyCompactList}\small\item\em chargementimage charge une image . \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_a42398ee9d614a2039ac9994dc5c198ff}{afficherimage} (\hyperlink{structsimage}{image} $\ast$IM, \hyperlink{structsjeusdl}{jeusdl} $\ast$jsdl, int positionX, int positionY, int largeurX, int largeurY)
+\begin{DoxyCompactList}\small\item\em afficherimage une image déja chargé \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_aa4f356ebb8b32cd84c71647df5359f9f}{afficherjeu} (\hyperlink{structsjeusdl}{jeusdl} jsdl)
+\begin{DoxyCompactList}\small\item\em afficherjeu affiche le jeu \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_ae78863e78178f03815d1a7a393609606}{menu\+S\+DL} (\hyperlink{structsjeusdl}{jeusdl} $\ast$jsdl)
+\begin{DoxyCompactList}\small\item\em menu\+S\+DL affiche un menu \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_a3e113bf430017e24ffe8330258775501}{commandes} (\hyperlink{structsjeusdl}{jeusdl} $\ast$jsdl)
+\begin{DoxyCompactList}\small\item\em commandes affiche un menu \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_aa34e2e925a1048eb8543b51cfc36b810}{volumes\+Musique} (\hyperlink{structsjeusdl}{jeusdl} $\ast$jsdl)
+\begin{DoxyCompactList}\small\item\em volumes\+Musique affiche un menu \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_a5bcb609fb7dacbf3b744b0c698c82f73}{volumes\+Bruitage} (\hyperlink{structsjeusdl}{jeusdl} $\ast$jsdl)
+\begin{DoxyCompactList}\small\item\em volumes\+Bruitage affiche un menu \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_af85a55e0b1078a3ff974659bff2d0a67}{gameover} (\hyperlink{structsjeusdl}{jeusdl} $\ast$jsdl)
+\begin{DoxyCompactList}\small\item\em gameover affiche le gameover \end{DoxyCompactList}\item 
+int \hyperlink{jeuSDL_8h_a49723ee6f40e76c2ad00cbc1e65f788c}{menu\+Pause} (\hyperlink{structsjeusdl}{jeusdl} $\ast$jsdl)
+\begin{DoxyCompactList}\small\item\em menu\+Pause affiche un menu et renvoie une valeur \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_a95e9b5ef3c668810d7fe094633a9811c}{freebouton} (\hyperlink{structsbouton}{bouton} $\ast$b)
+\begin{DoxyCompactList}\small\item\em freebouton libere un bouton \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_a419045ee3029d5881068965685b7932c}{detruire\+S\+DL} (\hyperlink{structsjeusdl}{jeusdl} $\ast$jsdl)
+\begin{DoxyCompactList}\small\item\em detruire\+S\+DL libère la mémoire de la S\+DL, des images, et du jeu \end{DoxyCompactList}\item 
+void \hyperlink{jeuSDL_8h_a81ee4f827ae1450cd6c6381a840b44a2}{jouer} (\hyperlink{structsjeusdl}{jeusdl} JS)
+\begin{DoxyCompactList}\small\item\em jouer affiche une partie en S\+DL \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09 avril 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!afficherimage@{afficherimage}}
+\index{afficherimage@{afficherimage}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{afficherimage(image $\ast$\+I\+M, jeusdl $\ast$jsdl, int position\+X, int position\+Y, int largeur\+X, int largeur\+Y)}{afficherimage(image *IM, jeusdl *jsdl, int positionX, int positionY, int largeurX, int largeurY)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficherimage (
+\begin{DoxyParamCaption}
+\item[{{\bf image} $\ast$}]{IM, }
+\item[{{\bf jeusdl} $\ast$}]{jsdl, }
+\item[{int}]{positionX, }
+\item[{int}]{positionY, }
+\item[{int}]{largeurX, }
+\item[{int}]{largeurY}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_a42398ee9d614a2039ac9994dc5c198ff}{}\label{jeuSDL_8h_a42398ee9d614a2039ac9994dc5c198ff}
+
+
+afficherimage une image déja chargé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IM} & pointeur sur image à afficher \\
+\hline
+{\em jsdl} & pointeur sur jeusdl \\
+\hline
+{\em positionX} & entier indiquant la position X du coin gauche en haut de l\textquotesingle{}image \\
+\hline
+{\em positionY} & entier indiquant la position Y du coin gauche en haut de l\textquotesingle{}image \\
+\hline
+{\em largeurX} & entier indiquant la largeur X de l\textquotesingle{}image \\
+\hline
+{\em largeurY} & entier indiquant la hauteur Y de l\textquotesingle{}image \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!afficherjeu@{afficherjeu}}
+\index{afficherjeu@{afficherjeu}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{afficherjeu(jeusdl jsdl)}{afficherjeu(jeusdl jsdl)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficherjeu (
+\begin{DoxyParamCaption}
+\item[{{\bf jeusdl}}]{jsdl}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_aa4f356ebb8b32cd84c71647df5359f9f}{}\label{jeuSDL_8h_aa4f356ebb8b32cd84c71647df5359f9f}
+
+
+afficherjeu affiche le jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jsdl} & jeusdl \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!chargementimage@{chargementimage}}
+\index{chargementimage@{chargementimage}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{chargementimage(const char $\ast$nomfichier, jeusdl $\ast$jsdl, image $\ast$\+I\+M)}{chargementimage(const char *nomfichier, jeusdl *jsdl, image *IM)}}]{\setlength{\rightskip}{0pt plus 5cm}void chargementimage (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nomfichier, }
+\item[{{\bf jeusdl} $\ast$}]{jsdl, }
+\item[{{\bf image} $\ast$}]{IM}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_aa00dc3649aee86773ba06b0fd871d1ee}{}\label{jeuSDL_8h_aa00dc3649aee86773ba06b0fd871d1ee}
+
+
+chargementimage charge une image . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nomfichier} & pointeur sur chaîne de carctère \\
+\hline
+{\em jsdl} & pointeur sur jeusdl \\
+\hline
+{\em IM} & un pointeur sur image \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!commandes@{commandes}}
+\index{commandes@{commandes}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{commandes(jeusdl $\ast$jsdl)}{commandes(jeusdl *jsdl)}}]{\setlength{\rightskip}{0pt plus 5cm}void commandes (
+\begin{DoxyParamCaption}
+\item[{{\bf jeusdl} $\ast$}]{jsdl}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_a3e113bf430017e24ffe8330258775501}{}\label{jeuSDL_8h_a3e113bf430017e24ffe8330258775501}
+
+
+commandes affiche un menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jsdl} & pointeur sur un jeusdl \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!detruire\+S\+DL@{detruire\+S\+DL}}
+\index{detruire\+S\+DL@{detruire\+S\+DL}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{detruire\+S\+D\+L(jeusdl $\ast$jsdl)}{detruireSDL(jeusdl *jsdl)}}]{\setlength{\rightskip}{0pt plus 5cm}void detruire\+S\+DL (
+\begin{DoxyParamCaption}
+\item[{{\bf jeusdl} $\ast$}]{jsdl}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_a419045ee3029d5881068965685b7932c}{}\label{jeuSDL_8h_a419045ee3029d5881068965685b7932c}
+
+
+detruire\+S\+DL libère la mémoire de la S\+DL, des images, et du jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jsdl} & pointeur sur jeusdl \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!freebouton@{freebouton}}
+\index{freebouton@{freebouton}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{freebouton(bouton $\ast$b)}{freebouton(bouton *b)}}]{\setlength{\rightskip}{0pt plus 5cm}void freebouton (
+\begin{DoxyParamCaption}
+\item[{{\bf bouton} $\ast$}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_a95e9b5ef3c668810d7fe094633a9811c}{}\label{jeuSDL_8h_a95e9b5ef3c668810d7fe094633a9811c}
+
+
+freebouton libere un bouton 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & pointeur sur un bouton \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!gameover@{gameover}}
+\index{gameover@{gameover}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{gameover(jeusdl $\ast$jsdl)}{gameover(jeusdl *jsdl)}}]{\setlength{\rightskip}{0pt plus 5cm}void gameover (
+\begin{DoxyParamCaption}
+\item[{{\bf jeusdl} $\ast$}]{jsdl}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_af85a55e0b1078a3ff974659bff2d0a67}{}\label{jeuSDL_8h_af85a55e0b1078a3ff974659bff2d0a67}
+
+
+gameover affiche le gameover 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jsdl} & pointeur sur un jeusdl \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!init\+S\+DL@{init\+S\+DL}}
+\index{init\+S\+DL@{init\+S\+DL}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{init\+S\+D\+L(jeusdl $\ast$jsdl)}{initSDL(jeusdl *jsdl)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+S\+DL (
+\begin{DoxyParamCaption}
+\item[{{\bf jeusdl} $\ast$}]{jsdl}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_a53c09b52664fd3f16e8d8fbc246bde50}{}\label{jeuSDL_8h_a53c09b52664fd3f16e8d8fbc246bde50}
+
+
+init\+Jeu initialise la S\+DL, charge les images, et initialise le jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jsdl} & pointeur sur jeusdl \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!jouer@{jouer}}
+\index{jouer@{jouer}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{jouer(jeusdl J\+S)}{jouer(jeusdl JS)}}]{\setlength{\rightskip}{0pt plus 5cm}void jouer (
+\begin{DoxyParamCaption}
+\item[{{\bf jeusdl}}]{JS}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_a81ee4f827ae1450cd6c6381a840b44a2}{}\label{jeuSDL_8h_a81ee4f827ae1450cd6c6381a840b44a2}
+
+
+jouer affiche une partie en S\+DL 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jsdl} & jeusdl \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!menu\+Pause@{menu\+Pause}}
+\index{menu\+Pause@{menu\+Pause}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{menu\+Pause(jeusdl $\ast$jsdl)}{menuPause(jeusdl *jsdl)}}]{\setlength{\rightskip}{0pt plus 5cm}int menu\+Pause (
+\begin{DoxyParamCaption}
+\item[{{\bf jeusdl} $\ast$}]{jsdl}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_a49723ee6f40e76c2ad00cbc1e65f788c}{}\label{jeuSDL_8h_a49723ee6f40e76c2ad00cbc1e65f788c}
+
+
+menu\+Pause affiche un menu et renvoie une valeur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jsdl} & pointeur sur un jeusdl \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier 0 ou 1 
+\end{DoxyReturn}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!menu\+S\+DL@{menu\+S\+DL}}
+\index{menu\+S\+DL@{menu\+S\+DL}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{menu\+S\+D\+L(jeusdl $\ast$jsdl)}{menuSDL(jeusdl *jsdl)}}]{\setlength{\rightskip}{0pt plus 5cm}void menu\+S\+DL (
+\begin{DoxyParamCaption}
+\item[{{\bf jeusdl} $\ast$}]{jsdl}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_ae78863e78178f03815d1a7a393609606}{}\label{jeuSDL_8h_ae78863e78178f03815d1a7a393609606}
+
+
+menu\+S\+DL affiche un menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jsdl} & pointeur sur un jeusdl \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!volumes\+Bruitage@{volumes\+Bruitage}}
+\index{volumes\+Bruitage@{volumes\+Bruitage}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{volumes\+Bruitage(jeusdl $\ast$jsdl)}{volumesBruitage(jeusdl *jsdl)}}]{\setlength{\rightskip}{0pt plus 5cm}void volumes\+Bruitage (
+\begin{DoxyParamCaption}
+\item[{{\bf jeusdl} $\ast$}]{jsdl}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_a5bcb609fb7dacbf3b744b0c698c82f73}{}\label{jeuSDL_8h_a5bcb609fb7dacbf3b744b0c698c82f73}
+
+
+volumes\+Bruitage affiche un menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jsdl} & pointeur sur un jeusdl \\
+\hline
+\end{DoxyParams}
+\index{jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}!volumes\+Musique@{volumes\+Musique}}
+\index{volumes\+Musique@{volumes\+Musique}!jeu\+S\+D\+L.\+h@{jeu\+S\+D\+L.\+h}}
+\subsubsection[{\texorpdfstring{volumes\+Musique(jeusdl $\ast$jsdl)}{volumesMusique(jeusdl *jsdl)}}]{\setlength{\rightskip}{0pt plus 5cm}void volumes\+Musique (
+\begin{DoxyParamCaption}
+\item[{{\bf jeusdl} $\ast$}]{jsdl}
+\end{DoxyParamCaption}
+)}\hypertarget{jeuSDL_8h_aa34e2e925a1048eb8543b51cfc36b810}{}\label{jeuSDL_8h_aa34e2e925a1048eb8543b51cfc36b810}
+
+
+volumes\+Musique affiche un menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jsdl} & pointeur sur un jeusdl \\
+\hline
+\end{DoxyParams}

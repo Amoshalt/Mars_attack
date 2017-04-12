@@ -1,0 +1,210 @@
+\hypertarget{map_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/map.h File Reference}
+\label{map_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/map.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/map.\+h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsmap}{smap}
+\begin{DoxyCompactList}\small\item\em Represente une carte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsmap}{smap} {\bfseries map}\hypertarget{map_8h_afabf4d1553acf7e514334e005672ad4c}{}\label{map_8h_afabf4d1553acf7e514334e005672ad4c}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{map_8h_a9b3bb31c132e8ad90f8c2547c19e136c}{init\+Map} (\hyperlink{structsmap}{map} $\ast$m, int x, int y)
+\begin{DoxyCompactList}\small\item\em init\+Map initialise dimx et dimy de la structure map puis alloue le tableau de caractères dans le tas \end{DoxyCompactList}\item 
+void \hyperlink{map_8h_a50614a8d0c6ac5a3e24272f492693c02}{free\+Map} (\hyperlink{structsmap}{map} $\ast$m)
+\begin{DoxyCompactList}\small\item\em free\+Map met dimx et dimy de la structure map à 0 puis libère la mémoire du tableau de caractères \end{DoxyCompactList}\item 
+char \hyperlink{map_8h_a5e30adb26386e57e2ef37797621c3081}{get\+Caract\+Map} (\hyperlink{structsmap}{map} m, int x, int y)
+\begin{DoxyCompactList}\small\item\em get\+Caract\+Map récupère le caractère de coordonnées (x,y) en vérifiant leur validité \end{DoxyCompactList}\item 
+void \hyperlink{map_8h_a21d04ec93015d322a9c6dde01815ed21}{set\+Caract\+Map} (\hyperlink{structsmap}{map} $\ast$m, int x, int y, char c)
+\begin{DoxyCompactList}\small\item\em set\+Caract\+Map modifie le caractère de coordonnées (x,y) \end{DoxyCompactList}\item 
+int \hyperlink{map_8h_a465dc940746aa9821cf0a2b8309ac34b}{get\+Dim\+X\+Map} (\hyperlink{structsmap}{map} m)
+\begin{DoxyCompactList}\small\item\em get\+Dim\+X\+Map récupère la dimx de map \end{DoxyCompactList}\item 
+int \hyperlink{map_8h_acc21a196cf3665030f965fc5fb402b94}{get\+Dim\+Y\+Map} (\hyperlink{structsmap}{map} m)
+\begin{DoxyCompactList}\small\item\em get\+Dim\+Y\+Map récupère la dimy de map \end{DoxyCompactList}\item 
+void \hyperlink{map_8h_a802070be9fff7cac234fbbbda1e6662a}{set\+Dim\+X\+Map} (\hyperlink{structsmap}{map} $\ast$m, int x)
+\begin{DoxyCompactList}\small\item\em set\+Dim\+X\+Map modifie la dimx de map \end{DoxyCompactList}\item 
+void \hyperlink{map_8h_aab2f70741020620a3a5b49ec7fccf845}{set\+Dim\+Y\+Map} (\hyperlink{structsmap}{map} $\ast$m, int y)
+\begin{DoxyCompactList}\small\item\em set\+Dim\+Y\+Map modifie la dimy de map \end{DoxyCompactList}\item 
+void \hyperlink{map_8h_ac1dda3e98f10ce0ea91ce613300ca60f}{test\+Map} ()\hypertarget{map_8h_ac1dda3e98f10ce0ea91ce613300ca60f}{}\label{map_8h_ac1dda3e98f10ce0ea91ce613300ca60f}
+
+\begin{DoxyCompactList}\small\item\em test\+Map test toutes les fonctions et procédures sur la map \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 mars 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{map.\+h@{map.\+h}!free\+Map@{free\+Map}}
+\index{free\+Map@{free\+Map}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{free\+Map(map $\ast$m)}{freeMap(map *m)}}]{\setlength{\rightskip}{0pt plus 5cm}void free\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf map} $\ast$}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_a50614a8d0c6ac5a3e24272f492693c02}{}\label{map_8h_a50614a8d0c6ac5a3e24272f492693c02}
+
+
+free\+Map met dimx et dimy de la structure map à 0 puis libère la mémoire du tableau de caractères 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur map \\
+\hline
+\end{DoxyParams}
+\index{map.\+h@{map.\+h}!get\+Caract\+Map@{get\+Caract\+Map}}
+\index{get\+Caract\+Map@{get\+Caract\+Map}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{get\+Caract\+Map(map m, int x, int y)}{getCaractMap(map m, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}char get\+Caract\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf map}}]{m, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_a5e30adb26386e57e2ef37797621c3081}{}\label{map_8h_a5e30adb26386e57e2ef37797621c3081}
+
+
+get\+Caract\+Map récupère le caractère de coordonnées (x,y) en vérifiant leur validité 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & une map \\
+\hline
+{\em x} & entier positif \\
+\hline
+{\em y} & entier positif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un caractère 
+\end{DoxyReturn}
+\index{map.\+h@{map.\+h}!get\+Dim\+X\+Map@{get\+Dim\+X\+Map}}
+\index{get\+Dim\+X\+Map@{get\+Dim\+X\+Map}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{get\+Dim\+X\+Map(map m)}{getDimXMap(map m)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Dim\+X\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf map}}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_a465dc940746aa9821cf0a2b8309ac34b}{}\label{map_8h_a465dc940746aa9821cf0a2b8309ac34b}
+
+
+get\+Dim\+X\+Map récupère la dimx de map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & une map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+entier positif, la largeur de la map 
+\end{DoxyReturn}
+\index{map.\+h@{map.\+h}!get\+Dim\+Y\+Map@{get\+Dim\+Y\+Map}}
+\index{get\+Dim\+Y\+Map@{get\+Dim\+Y\+Map}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{get\+Dim\+Y\+Map(map m)}{getDimYMap(map m)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Dim\+Y\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf map}}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_acc21a196cf3665030f965fc5fb402b94}{}\label{map_8h_acc21a196cf3665030f965fc5fb402b94}
+
+
+get\+Dim\+Y\+Map récupère la dimy de map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & une map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+entier positif, la hauteur de la map 
+\end{DoxyReturn}
+\index{map.\+h@{map.\+h}!init\+Map@{init\+Map}}
+\index{init\+Map@{init\+Map}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{init\+Map(map $\ast$m, int x, int y)}{initMap(map *m, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf map} $\ast$}]{m, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_a9b3bb31c132e8ad90f8c2547c19e136c}{}\label{map_8h_a9b3bb31c132e8ad90f8c2547c19e136c}
+
+
+init\+Map initialise dimx et dimy de la structure map puis alloue le tableau de caractères dans le tas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur map \\
+\hline
+\end{DoxyParams}
+\index{map.\+h@{map.\+h}!set\+Caract\+Map@{set\+Caract\+Map}}
+\index{set\+Caract\+Map@{set\+Caract\+Map}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{set\+Caract\+Map(map $\ast$m, int x, int y, char c)}{setCaractMap(map *m, int x, int y, char c)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Caract\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf map} $\ast$}]{m, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_a21d04ec93015d322a9c6dde01815ed21}{}\label{map_8h_a21d04ec93015d322a9c6dde01815ed21}
+
+
+set\+Caract\+Map modifie le caractère de coordonnées (x,y) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur map \\
+\hline
+{\em x} & entier positif pour modifier \\
+\hline
+{\em y} & entier positif pour modifier \\
+\hline
+{\em c} & caractere \\
+\hline
+\end{DoxyParams}
+\index{map.\+h@{map.\+h}!set\+Dim\+X\+Map@{set\+Dim\+X\+Map}}
+\index{set\+Dim\+X\+Map@{set\+Dim\+X\+Map}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{set\+Dim\+X\+Map(map $\ast$m, int x)}{setDimXMap(map *m, int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Dim\+X\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf map} $\ast$}]{m, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_a802070be9fff7cac234fbbbda1e6662a}{}\label{map_8h_a802070be9fff7cac234fbbbda1e6662a}
+
+
+set\+Dim\+X\+Map modifie la dimx de map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur map \\
+\hline
+{\em x} & entier positif pour modifier \\
+\hline
+\end{DoxyParams}
+\index{map.\+h@{map.\+h}!set\+Dim\+Y\+Map@{set\+Dim\+Y\+Map}}
+\index{set\+Dim\+Y\+Map@{set\+Dim\+Y\+Map}!map.\+h@{map.\+h}}
+\subsubsection[{\texorpdfstring{set\+Dim\+Y\+Map(map $\ast$m, int y)}{setDimYMap(map *m, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Dim\+Y\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf map} $\ast$}]{m, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8h_aab2f70741020620a3a5b49ec7fccf845}{}\label{map_8h_aab2f70741020620a3a5b49ec7fccf845}
+
+
+set\+Dim\+Y\+Map modifie la dimy de map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & pointeur sur map \\
+\hline
+{\em y} & entier positif pour modifier \\
+\hline
+\end{DoxyParams}

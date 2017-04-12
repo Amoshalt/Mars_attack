@@ -1,0 +1,563 @@
+\hypertarget{jeu_8h}{}\section{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/jeu.h File Reference}
+\label{jeu_8h}\index{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/jeu.\+h@{/home/rainouard/\+Documents/\+Polytech/\+L\+I\+F7/\+Projet/p1406009-\/mars\+\_\+attack/src/jeu.\+h}}
+{\ttfamily \#include \char`\"{}position.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}protection.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ensembleprotection.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}map.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}alien.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ensemblealien.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ensemblemissile.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}missile.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}vaisseau.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}scores.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsjeu}{sjeu}
+\begin{DoxyCompactList}\small\item\em Represente un jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsjeu}{sjeu} {\bfseries jeu}\hypertarget{jeu_8h_ac417c85277793c57d60eaf4905ee4d6c}{}\label{jeu_8h_ac417c85277793c57d60eaf4905ee4d6c}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{jeu_8h_a796c1c1b5477a4707ceea3b089e83f3f}{init\+Jeu} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em init\+Jeu initialise la structure jeu \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a079dafd5d90cc3738907815ac8c577b5}{free\+Jeu} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em free\+Jeu libère la memoire de jeu \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a0e78d2ee1f3d975c62300974e1960631}{afficherinformation} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em afficherinformation affiche les inforamtions sur le jeu \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_af4434e7ffd7c2b365309ae3f742144ea}{deplacement\+Vaisseau} (\hyperlink{structsjeu}{jeu} $\ast$j, int direction)
+\begin{DoxyCompactList}\small\item\em deplacement\+Vaisseau deplace le vaisseau suivant la direction demandé (1 gauche, 0 droite) \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_aa371e254d6a75db06e61f53a9ce18ca1}{ajout\+Ensemble\+Alien} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em ajout\+Ensemble\+Alien créé le nombre d\textquotesingle{}aliens (demandé par les constantes), et les places sur la carte \end{DoxyCompactList}\item 
+int \hyperlink{jeu_8h_a67a400c952bd73943ff24becb50739f3}{alien\+Bord\+Map} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em alien\+Bord\+Map renvoie 1 si un alien est présent sur le bord de la map et 0 sinon \end{DoxyCompactList}\item 
+int \hyperlink{jeu_8h_a5b97b8d16014cdac6910ded63bb375c6}{deplacement\+Aliens} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em deplacement\+Aliens deplace le vaisseau suivant la direction demandé (1 gauche, 0 droite, 2 bas) \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_ab51ffadbc25f5d09c488f31a4662e19f}{ajout\+Ensembleprotection} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em ajout\+Ensembleprotection créé le nombre de protection (demandé par les constantes), et les places sur la carte à interval régulier. \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a1a1c407b275e02b0b0bb47d53d617eca}{ajout\+Vaisseau} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em ajout\+Vaisseau créé le vaisseau, le place en bas et au centre de la carte \end{DoxyCompactList}\item 
+int \hyperlink{jeu_8h_a59be97cbe571e207d5f9524696bcf5e1}{defaite} (\hyperlink{structsjeu}{jeu} j)
+\begin{DoxyCompactList}\small\item\em defaite vérifie si la partie est perdue \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_ac1141b34b5515e0947311599eaad7e57}{tirer\+Missile\+Vaisseau} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em tirer\+Missile\+Vaisseau lance un missile vers le haut à partir du vaisseau \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a4dc10c417be9867af000104baf28805f}{tirer\+Missile\+Alien} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em tirer\+Missile\+Alien lance un missile vers le bas à partir d\textquotesingle{}un alien aleatoire \end{DoxyCompactList}\item 
+int \hyperlink{jeu_8h_a555b3fb0e65033fd414d62e545a57330}{deplacement\+Missile\+Vaisseau} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em deplacement\+Missile\+Vaisseau deplace le missile vers le haut \end{DoxyCompactList}\item 
+int \hyperlink{jeu_8h_a509c13ff6fedf3b7089e78198de6ee0c}{deplacement\+Missile\+Alien} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em deplacement\+Missile\+Alien deplace le missile vers le bas \end{DoxyCompactList}\item 
+int \hyperlink{jeu_8h_a989f1eaa2811ce8ca066dfa2154f160d}{collision} (\hyperlink{structsmissile}{missile} m, \hyperlink{structsjeu}{jeu} j)
+\begin{DoxyCompactList}\small\item\em collision renvoie si un missile rentre en collision avec une objet \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a876bcc4360b848db1acbb17d8875987c}{ajoutvie} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em ajoutvie affiche un coeur sur la map \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a31a6e779bc5284d405909a723cb3950e}{ajout\+Super\+Missile} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em ajout\+Super\+Missile affiche un bonus pour obtenir un supermissile sur la map \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a6965e4bc60b04ac3c76161cb791bd97d}{tirer\+Super\+Missile} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em tirer\+Super\+Missile permets de tirer un supermissile \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a8a84e9e0074852603cd927ae26bf4266}{afficher\+Map} (\hyperlink{structsjeu}{jeu} j)
+\begin{DoxyCompactList}\small\item\em afficher\+Map affiche la map avec les differents objets dessus \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a1f251438a377e0843da6e1aba35a2d21}{mapinitial} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em mapinitial ajoute les aliens, les protections, le vaisseau au jeu et rempli le reste de la map avec de \# \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a9ef46895309d05492f52c90b72e60194}{regenerer\+Map} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em regenerer\+Map supprime tout sur la map et regenerer la map initial \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a60f2575b819ea7bb84c742b950b7428d}{sauvegarde\+Jeu} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em sauvegarde\+Jeu sauvegarde une partie \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a2d34028f7ed84c590e589c0409892705}{decode\+Fichier\+Sauvegarde\+Map} (\hyperlink{structsjeu}{jeu} $\ast$\hyperlink{structsjeu}{jeu})
+\begin{DoxyCompactList}\small\item\em void decode\+Fichier\+Sauvegarde\+Map creer un jeu à partir d\textquotesingle{}une sauvegarde \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_ac0e3edbfe5f9d343d31bce0b2e1b6fa9}{supprime\+Sauvegarde\+Map} ()\hypertarget{jeu_8h_ac0e3edbfe5f9d343d31bce0b2e1b6fa9}{}\label{jeu_8h_ac0e3edbfe5f9d343d31bce0b2e1b6fa9}
+
+\begin{DoxyCompactList}\small\item\em void supprime\+Sauvegarde\+Map \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a8b856181921e19e236b96c66e04577e9}{set\+Super\+Missile} (\hyperlink{structsjeu}{jeu} $\ast$j, int i)
+\begin{DoxyCompactList}\small\item\em set\+Super\+Missile modifie le nombre de supermissile du jeu \end{DoxyCompactList}\item 
+int \hyperlink{jeu_8h_aaf02d8df95e1e0a3981925ca1d7d6321}{get\+Niveau\+Jeu} (\hyperlink{structsjeu}{jeu} j)
+\begin{DoxyCompactList}\small\item\em get\+Niveau\+Jeu renvoie le niveau du jeu \end{DoxyCompactList}\item 
+int \hyperlink{jeu_8h_ad99acac9dc41b9b6fffa8396d9e52ea8}{get\+Super\+Missile} (\hyperlink{structsjeu}{jeu} j)
+\begin{DoxyCompactList}\small\item\em get\+Super\+Missile renvoie le nombre de supermissile du jeu \end{DoxyCompactList}\item 
+void \hyperlink{jeu_8h_a405c84f339898d03852787544ee533b7}{augmenter\+Niveau} (\hyperlink{structsjeu}{jeu} $\ast$j)
+\begin{DoxyCompactList}\small\item\em augmenter\+Niveau augmente le niveau de 1 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+R\+U\+I\+L\+L\+AT Clara 1406009 / T\+A\+R\+DY Martial 11407179 / R\+A\+I\+N\+O\+U\+A\+RD Fabian 11406132 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09 mars 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{jeu.\+h@{jeu.\+h}!afficherinformation@{afficherinformation}}
+\index{afficherinformation@{afficherinformation}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{afficherinformation(jeu $\ast$j)}{afficherinformation(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficherinformation (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a0e78d2ee1f3d975c62300974e1960631}{}\label{jeu_8h_a0e78d2ee1f3d975c62300974e1960631}
+
+
+afficherinformation affiche les inforamtions sur le jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!afficher\+Map@{afficher\+Map}}
+\index{afficher\+Map@{afficher\+Map}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{afficher\+Map(jeu j)}{afficherMap(jeu j)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu}}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a8a84e9e0074852603cd927ae26bf4266}{}\label{jeu_8h_a8a84e9e0074852603cd927ae26bf4266}
+
+
+afficher\+Map affiche la map avec les differents objets dessus 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!ajout\+Ensemble\+Alien@{ajout\+Ensemble\+Alien}}
+\index{ajout\+Ensemble\+Alien@{ajout\+Ensemble\+Alien}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+Ensemble\+Alien(jeu $\ast$j)}{ajoutEnsembleAlien(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+Ensemble\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_aa371e254d6a75db06e61f53a9ce18ca1}{}\label{jeu_8h_aa371e254d6a75db06e61f53a9ce18ca1}
+
+
+ajout\+Ensemble\+Alien créé le nombre d\textquotesingle{}aliens (demandé par les constantes), et les places sur la carte 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!ajout\+Ensembleprotection@{ajout\+Ensembleprotection}}
+\index{ajout\+Ensembleprotection@{ajout\+Ensembleprotection}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+Ensembleprotection(jeu $\ast$j)}{ajoutEnsembleprotection(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+Ensembleprotection (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_ab51ffadbc25f5d09c488f31a4662e19f}{}\label{jeu_8h_ab51ffadbc25f5d09c488f31a4662e19f}
+
+
+ajout\+Ensembleprotection créé le nombre de protection (demandé par les constantes), et les places sur la carte à interval régulier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!ajout\+Super\+Missile@{ajout\+Super\+Missile}}
+\index{ajout\+Super\+Missile@{ajout\+Super\+Missile}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+Super\+Missile(jeu $\ast$j)}{ajoutSuperMissile(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+Super\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a31a6e779bc5284d405909a723cb3950e}{}\label{jeu_8h_a31a6e779bc5284d405909a723cb3950e}
+
+
+ajout\+Super\+Missile affiche un bonus pour obtenir un supermissile sur la map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!ajout\+Vaisseau@{ajout\+Vaisseau}}
+\index{ajout\+Vaisseau@{ajout\+Vaisseau}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{ajout\+Vaisseau(jeu $\ast$j)}{ajoutVaisseau(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajout\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a1a1c407b275e02b0b0bb47d53d617eca}{}\label{jeu_8h_a1a1c407b275e02b0b0bb47d53d617eca}
+
+
+ajout\+Vaisseau créé le vaisseau, le place en bas et au centre de la carte 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!ajoutvie@{ajoutvie}}
+\index{ajoutvie@{ajoutvie}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{ajoutvie(jeu $\ast$j)}{ajoutvie(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void ajoutvie (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a876bcc4360b848db1acbb17d8875987c}{}\label{jeu_8h_a876bcc4360b848db1acbb17d8875987c}
+
+
+ajoutvie affiche un coeur sur la map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!alien\+Bord\+Map@{alien\+Bord\+Map}}
+\index{alien\+Bord\+Map@{alien\+Bord\+Map}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{alien\+Bord\+Map(jeu $\ast$j)}{alienBordMap(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}int alien\+Bord\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a67a400c952bd73943ff24becb50739f3}{}\label{jeu_8h_a67a400c952bd73943ff24becb50739f3}
+
+
+alien\+Bord\+Map renvoie 1 si un alien est présent sur le bord de la map et 0 sinon 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier 0 ou 1 
+\end{DoxyReturn}
+\index{jeu.\+h@{jeu.\+h}!augmenter\+Niveau@{augmenter\+Niveau}}
+\index{augmenter\+Niveau@{augmenter\+Niveau}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{augmenter\+Niveau(jeu $\ast$j)}{augmenterNiveau(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void augmenter\+Niveau (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a405c84f339898d03852787544ee533b7}{}\label{jeu_8h_a405c84f339898d03852787544ee533b7}
+
+
+augmenter\+Niveau augmente le niveau de 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!collision@{collision}}
+\index{collision@{collision}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{collision(missile m, jeu j)}{collision(missile m, jeu j)}}]{\setlength{\rightskip}{0pt plus 5cm}int collision (
+\begin{DoxyParamCaption}
+\item[{{\bf missile}}]{m, }
+\item[{{\bf jeu}}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a989f1eaa2811ce8ca066dfa2154f160d}{}\label{jeu_8h_a989f1eaa2811ce8ca066dfa2154f160d}
+
+
+collision renvoie si un missile rentre en collision avec une objet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & un missile \\
+\hline
+{\em j} & un jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier entre 1 et 6 
+\end{DoxyReturn}
+\index{jeu.\+h@{jeu.\+h}!decode\+Fichier\+Sauvegarde\+Map@{decode\+Fichier\+Sauvegarde\+Map}}
+\index{decode\+Fichier\+Sauvegarde\+Map@{decode\+Fichier\+Sauvegarde\+Map}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{decode\+Fichier\+Sauvegarde\+Map(jeu $\ast$jeu)}{decodeFichierSauvegardeMap(jeu *jeu)}}]{\setlength{\rightskip}{0pt plus 5cm}void decode\+Fichier\+Sauvegarde\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{jeu}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a2d34028f7ed84c590e589c0409892705}{}\label{jeu_8h_a2d34028f7ed84c590e589c0409892705}
+
+
+void decode\+Fichier\+Sauvegarde\+Map creer un jeu à partir d\textquotesingle{}une sauvegarde 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!defaite@{defaite}}
+\index{defaite@{defaite}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{defaite(jeu j)}{defaite(jeu j)}}]{\setlength{\rightskip}{0pt plus 5cm}int defaite (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu}}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a59be97cbe571e207d5f9524696bcf5e1}{}\label{jeu_8h_a59be97cbe571e207d5f9524696bcf5e1}
+
+
+defaite vérifie si la partie est perdue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier (0 ou 1) 
+\end{DoxyReturn}
+\index{jeu.\+h@{jeu.\+h}!deplacement\+Aliens@{deplacement\+Aliens}}
+\index{deplacement\+Aliens@{deplacement\+Aliens}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{deplacement\+Aliens(jeu $\ast$j)}{deplacementAliens(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}int deplacement\+Aliens (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a5b97b8d16014cdac6910ded63bb375c6}{}\label{jeu_8h_a5b97b8d16014cdac6910ded63bb375c6}
+
+
+deplacement\+Aliens deplace le vaisseau suivant la direction demandé (1 gauche, 0 droite, 2 bas) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier 0 ou 1 pour savoir s\textquotesingle{}il reste des aliens 
+\end{DoxyReturn}
+\index{jeu.\+h@{jeu.\+h}!deplacement\+Missile\+Alien@{deplacement\+Missile\+Alien}}
+\index{deplacement\+Missile\+Alien@{deplacement\+Missile\+Alien}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{deplacement\+Missile\+Alien(jeu $\ast$j)}{deplacementMissileAlien(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}int deplacement\+Missile\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a509c13ff6fedf3b7089e78198de6ee0c}{}\label{jeu_8h_a509c13ff6fedf3b7089e78198de6ee0c}
+
+
+deplacement\+Missile\+Alien deplace le missile vers le bas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier 0 ou 1 pour savoir s\textquotesingle{}il reste dela vie au vaisseau 
+\end{DoxyReturn}
+\index{jeu.\+h@{jeu.\+h}!deplacement\+Missile\+Vaisseau@{deplacement\+Missile\+Vaisseau}}
+\index{deplacement\+Missile\+Vaisseau@{deplacement\+Missile\+Vaisseau}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{deplacement\+Missile\+Vaisseau(jeu $\ast$j)}{deplacementMissileVaisseau(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}int deplacement\+Missile\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a555b3fb0e65033fd414d62e545a57330}{}\label{jeu_8h_a555b3fb0e65033fd414d62e545a57330}
+
+
+deplacement\+Missile\+Vaisseau deplace le missile vers le haut 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier 0 ou 1 pour savoir s\textquotesingle{}il reste des aliens 
+\end{DoxyReturn}
+\index{jeu.\+h@{jeu.\+h}!deplacement\+Vaisseau@{deplacement\+Vaisseau}}
+\index{deplacement\+Vaisseau@{deplacement\+Vaisseau}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{deplacement\+Vaisseau(jeu $\ast$j, int direction)}{deplacementVaisseau(jeu *j, int direction)}}]{\setlength{\rightskip}{0pt plus 5cm}void deplacement\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j, }
+\item[{int}]{direction}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_af4434e7ffd7c2b365309ae3f742144ea}{}\label{jeu_8h_af4434e7ffd7c2b365309ae3f742144ea}
+
+
+deplacement\+Vaisseau deplace le vaisseau suivant la direction demandé (1 gauche, 0 droite) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+{\em direction} & entier , 0 ou 1 \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!free\+Jeu@{free\+Jeu}}
+\index{free\+Jeu@{free\+Jeu}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{free\+Jeu(jeu $\ast$j)}{freeJeu(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void free\+Jeu (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a079dafd5d90cc3738907815ac8c577b5}{}\label{jeu_8h_a079dafd5d90cc3738907815ac8c577b5}
+
+
+free\+Jeu libère la memoire de jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!get\+Niveau\+Jeu@{get\+Niveau\+Jeu}}
+\index{get\+Niveau\+Jeu@{get\+Niveau\+Jeu}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{get\+Niveau\+Jeu(jeu j)}{getNiveauJeu(jeu j)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Niveau\+Jeu (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu}}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_aaf02d8df95e1e0a3981925ca1d7d6321}{}\label{jeu_8h_aaf02d8df95e1e0a3981925ca1d7d6321}
+
+
+get\+Niveau\+Jeu renvoie le niveau du jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & un jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier 
+\end{DoxyReturn}
+\index{jeu.\+h@{jeu.\+h}!get\+Super\+Missile@{get\+Super\+Missile}}
+\index{get\+Super\+Missile@{get\+Super\+Missile}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{get\+Super\+Missile(jeu j)}{getSuperMissile(jeu j)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Super\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu}}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_ad99acac9dc41b9b6fffa8396d9e52ea8}{}\label{jeu_8h_ad99acac9dc41b9b6fffa8396d9e52ea8}
+
+
+get\+Super\+Missile renvoie le nombre de supermissile du jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & un jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier 
+\end{DoxyReturn}
+\index{jeu.\+h@{jeu.\+h}!init\+Jeu@{init\+Jeu}}
+\index{init\+Jeu@{init\+Jeu}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{init\+Jeu(jeu $\ast$j)}{initJeu(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Jeu (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a796c1c1b5477a4707ceea3b089e83f3f}{}\label{jeu_8h_a796c1c1b5477a4707ceea3b089e83f3f}
+
+
+init\+Jeu initialise la structure jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!mapinitial@{mapinitial}}
+\index{mapinitial@{mapinitial}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{mapinitial(jeu $\ast$j)}{mapinitial(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void mapinitial (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a1f251438a377e0843da6e1aba35a2d21}{}\label{jeu_8h_a1f251438a377e0843da6e1aba35a2d21}
+
+
+mapinitial ajoute les aliens, les protections, le vaisseau au jeu et rempli le reste de la map avec de \# 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!regenerer\+Map@{regenerer\+Map}}
+\index{regenerer\+Map@{regenerer\+Map}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{regenerer\+Map(jeu $\ast$j)}{regenererMap(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void regenerer\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a9ef46895309d05492f52c90b72e60194}{}\label{jeu_8h_a9ef46895309d05492f52c90b72e60194}
+
+
+regenerer\+Map supprime tout sur la map et regenerer la map initial 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!sauvegarde\+Jeu@{sauvegarde\+Jeu}}
+\index{sauvegarde\+Jeu@{sauvegarde\+Jeu}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{sauvegarde\+Jeu(jeu $\ast$j)}{sauvegardeJeu(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void sauvegarde\+Jeu (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a60f2575b819ea7bb84c742b950b7428d}{}\label{jeu_8h_a60f2575b819ea7bb84c742b950b7428d}
+
+
+sauvegarde\+Jeu sauvegarde une partie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!set\+Super\+Missile@{set\+Super\+Missile}}
+\index{set\+Super\+Missile@{set\+Super\+Missile}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{set\+Super\+Missile(jeu $\ast$j, int i)}{setSuperMissile(jeu *j, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Super\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a8b856181921e19e236b96c66e04577e9}{}\label{jeu_8h_a8b856181921e19e236b96c66e04577e9}
+
+
+set\+Super\+Missile modifie le nombre de supermissile du jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+{\em i} & un entier positif \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!tirer\+Missile\+Alien@{tirer\+Missile\+Alien}}
+\index{tirer\+Missile\+Alien@{tirer\+Missile\+Alien}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{tirer\+Missile\+Alien(jeu $\ast$j)}{tirerMissileAlien(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void tirer\+Missile\+Alien (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a4dc10c417be9867af000104baf28805f}{}\label{jeu_8h_a4dc10c417be9867af000104baf28805f}
+
+
+tirer\+Missile\+Alien lance un missile vers le bas à partir d\textquotesingle{}un alien aleatoire 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!tirer\+Missile\+Vaisseau@{tirer\+Missile\+Vaisseau}}
+\index{tirer\+Missile\+Vaisseau@{tirer\+Missile\+Vaisseau}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{tirer\+Missile\+Vaisseau(jeu $\ast$j)}{tirerMissileVaisseau(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void tirer\+Missile\+Vaisseau (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_ac1141b34b5515e0947311599eaad7e57}{}\label{jeu_8h_ac1141b34b5515e0947311599eaad7e57}
+
+
+tirer\+Missile\+Vaisseau lance un missile vers le haut à partir du vaisseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & pointeur sur jeu \\
+\hline
+\end{DoxyParams}
+\index{jeu.\+h@{jeu.\+h}!tirer\+Super\+Missile@{tirer\+Super\+Missile}}
+\index{tirer\+Super\+Missile@{tirer\+Super\+Missile}!jeu.\+h@{jeu.\+h}}
+\subsubsection[{\texorpdfstring{tirer\+Super\+Missile(jeu $\ast$j)}{tirerSuperMissile(jeu *j)}}]{\setlength{\rightskip}{0pt plus 5cm}void tirer\+Super\+Missile (
+\begin{DoxyParamCaption}
+\item[{{\bf jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{jeu_8h_a6965e4bc60b04ac3c76161cb791bd97d}{}\label{jeu_8h_a6965e4bc60b04ac3c76161cb791bd97d}
+
+
+tirer\+Super\+Missile permets de tirer un supermissile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & jeu \\
+\hline
+\end{DoxyParams}
